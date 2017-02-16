@@ -60,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "https://avatars0.githubusercontent.com/u/1439327?v=3&s=400"
+og_image                 : "https://avatars0.githubusercontent.com/u/1439327?v=3&s=200"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Chris MacPherson"
   avatar           : "https://avatars0.githubusercontent.com/u/1439327?v=3&s=400"
-  bio              : "I'm a Software Engineer who loves learning about science and space, 3d Printing and tries to make music"
+  bio              : "I'm a Software Engineer who loves learning about science, space, 3d Printing and plugging bits of kit together to make music"
   location         : "UK"
   email            :
   uri              :
@@ -89,14 +89,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/chrismacp"
+  github           : "chrismacp"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/chrismacp/"
+  linkedin         : "chrismacp/"
   pinterest        :
-  soundcloud       : "https://soundcloud.com/chrismacp"
+  soundcloud       : "chrismacp"
   stackoverflow    : "170239/chrismacp"
   steam            :
   tumblr           :
