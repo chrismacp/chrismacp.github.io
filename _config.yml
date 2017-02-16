@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "chrismacpherson.net"
 title_separator          : "-"
-name                     : "chrismacpherson.net"
+name                     : "Chris MacPherson"
 description              : "Blog - Software Engineering, Science, 3d Printing, Music"
 url                      : "http://chrismacpherson.net
 baseurl                  : # the subpath of your site, e.g. "/blog"
