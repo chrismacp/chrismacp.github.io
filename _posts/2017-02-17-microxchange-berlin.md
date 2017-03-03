@@ -1,13 +1,13 @@
 ---
-title: MicroXchg - Berlin
+title: "MicroXchg - Berlin"
 header:
   image: /assets/images/pangolin1.png
 category:
   dev
 tags:
-- microservices
-- SOA
-- Berlin
+  - microservices
+  - SOA
+  - Berlin
 ---
 
 MicroxChange Conference, Berlin
