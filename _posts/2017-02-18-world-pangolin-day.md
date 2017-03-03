@@ -1,5 +1,5 @@
 ---
-title: Pangolin Day
+title: "Pangolin Day"
 header:
   image: /assets/images/pangolin1.png
 gallery:
@@ -16,7 +16,7 @@ category:
 tags:
  - thingiverse
  - pangolin
- - \#WorldPangolinDay
+ - "\#WorldPangolinDay"
 ---
 
 Recently I noticed that it was World Pangolin Day and with some species of these 
