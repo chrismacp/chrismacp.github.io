@@ -60,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "https://avatars0.githubusercontent.com/u/1439327?v=3&s=200"
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -94,7 +94,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "chrismacp/"
+  linkedin         : "chrismacp"
   pinterest        :
   soundcloud       : "chrismacp"
   stackoverflow    : "170239/chrismacp"
