@@ -15,8 +15,6 @@ MicroxChange Conference, Berlin
 
 18th February 2017
 
-Conference SOA Micro-Service 
-
 This was my first time at the MicroXchg conference in Berlin. All the talks were
 focussed on [microservices](https://en.wikipedia.org/wiki/Microservices) and as my company is migrating towards a 
 [Service Oriented 
