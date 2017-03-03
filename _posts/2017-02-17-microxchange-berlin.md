@@ -44,4 +44,6 @@ This is not to say that doing microservices is not worth the effort or expense, 
 Phil Webb’s [talk](https://www.youtube.com/watch?v=61ym_VES6qg) about [Atomist](http://docs.atomist.com/) 
 is one potential solution aimed at the information overload issue. It allows you to be 
 informed about the vital, timely information about your services via Slack, without Slack 
-being overused, notifying you about every commit made to the repo for example. 
+being overused, notifying you about every commit made to the repo for example.
+
+You can check out all the videos from the conference [on YouTube](https://www.youtube.com/channel/UCGCbB8TPtYMQmJwYVogcPjg)
