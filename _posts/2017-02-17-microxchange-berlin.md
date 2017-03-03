@@ -1,7 +1,7 @@
 ---
 title: "MicroXchg - Berlin"
 header:
-  image: /assets/images/pangolin1.png
+  image: /assets/images/Calabash_HubbleSchmidt_1280.jpg
 category:
   dev
 tags:
