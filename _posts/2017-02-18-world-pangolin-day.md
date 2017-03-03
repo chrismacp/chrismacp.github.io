@@ -2,15 +2,6 @@
 title: "Pangolin Day"
 header:
   image: /assets/images/pangolin1.png
-gallery:
-  - url: /assets/images/pangolin1.png
-    image_path: /assets/images/pangolin1.png
-    alt: "Pangolin model"
-    title: "Pangolin model"
- - url: /assets/images/pangolin2.png
-     image_path: /assets/images/pangolin2.png
-     alt: "Pangolin model curled up"
-     title: "Pangolin model curled up"
 category:
   3dprint
 tags:
