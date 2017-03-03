@@ -26,7 +26,7 @@ The 3D print model which I found on thingiverse is amazing! I managed to print i
 with little effort, the designer should be very proud of their work as it works and 
 looks really great. 
 
-{% include gallery %}
+{% include figure image_path="/assets/images/pangolin2.png" alt="Pangolin model curled up" caption="Pangolin model curled up" %}
 
 You can find the model and files for printing here:
 
