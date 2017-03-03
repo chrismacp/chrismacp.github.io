@@ -7,6 +7,7 @@ category:
 tags:
   - microservices
   - SOA
+  - conference
   - Berlin
 ---
 
