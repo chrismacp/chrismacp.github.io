@@ -48,7 +48,8 @@ being overused, notifying you about every commit made to the repo for example.
 I have already noticed some team Slack channels spurting out notifications for every 
 change to a JIRA ticket status and others spewing Jenkins build changes for all environments. 
 You can hardly see the actual chatter any more! I think it pays to be much more selective and
-think about what ntofications you *really* need. For the moment I am sticking with production Jenkins build 
-results and important [Grafana alerts](http://docs.grafana.org/alerting/rules/) (yes it has alerting now in v4!).
+think about what notifications you *really* need. For the moment, I am sticking with production 
+Jenkins build results and important [Grafana alerts](http://docs.grafana.org/alerting/rules/)
+(yes it has alerting now in v4!). I'll see how it progresses from there.
 
 You can check out all the videos from the conference [on YouTube](https://www.youtube.com/channel/UCGCbB8TPtYMQmJwYVogcPjg)
