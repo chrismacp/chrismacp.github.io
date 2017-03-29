@@ -54,6 +54,7 @@ $susy: (
    Base
    ========================================================================== */
 
+@import "custom";
 @import "mixins";
 @import "reset";
 @import "base";
@@ -77,4 +78,3 @@ $susy: (
 @import "archive";
 @import "sidebar";
 @import "print";
-@import "custom";
