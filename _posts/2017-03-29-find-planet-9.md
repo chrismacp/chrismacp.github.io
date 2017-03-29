@@ -21,8 +21,8 @@ Details about the possible super-earth sized planet planet are still just hypoth
 much time has been spent surveying the local system to try and find it. Now citizen scientists
 can also help by analysing the surveyed images, identifying potential candidates. 
  
-To get involved check out [https://www.zooniverse.org/projects/skymap/planet-9], another
-citizen science project run by [www.zooniverse.org]. 
+To get involved check out [Zooniverse's Planet 9], another
+citizen science project run by [www.zooniverse.org](www.zooniverse.org). 
 
 I have been analysing some images tonight and it isn't proving too difficult at all.
 I've previously taken part in some of the other Zooniverse projects which could be tricky 
@@ -30,5 +30,8 @@ but here checking for colour details simplifies the process. It's really simple 
 get going so there's no reason not to give it a go :)
 
 Read more:
-[https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwjG0bntxvzSAhUF1hQKHSxFC7AQFggoMAM&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPlanet_Nine&usg=AFQjCNGlx5LBQuu2WMkDgTJ_7sWFdsyRsg&sig2=1rPw_NMdALs552ocmQylKA]
-[http://www.armaghplanet.com/blog/planet-nine-from-outer-space.html]
+
+[Wikipedia page](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwjG0bntxvzSAhUF1hQKHSxFC7AQFggoMAM&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPlanet_Nine&usg=AFQjCNGlx5LBQuu2WMkDgTJ_7sWFdsyRsg&sig2=1rPw_NMdALs552ocmQylKA)
+[http://www.armaghplanet.com/blog/planet-nine-from-outer-space.html](http://www.armaghplanet.com/blog/planet-nine-from-outer-space.html)
+
+[Zooniverse's PLanet 9]:https://www.zooniverse.org/projects/skymap/planet-9
