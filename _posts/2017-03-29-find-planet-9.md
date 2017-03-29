@@ -29,7 +29,7 @@ I've previously taken part in some of the other Zooniverse projects which could 
 but here checking for colour details simplifies the process. It's really simple and fast to
 get going so there's no reason not to give it a go :)
 
-Read more:
+Read more about planet 9:
 
 [Wikipedia page](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwjG0bntxvzSAhUF1hQKHSxFC7AQFggoMAM&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPlanet_Nine&usg=AFQjCNGlx5LBQuu2WMkDgTJ_7sWFdsyRsg&sig2=1rPw_NMdALs552ocmQylKA)
 
