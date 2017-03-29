@@ -34,7 +34,7 @@
   }
 
   p, li {
-    font-family: $Raleway;
+    font-family: $raleway;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -117,7 +117,7 @@
 
 .author__bio {
   margin: 0;
-  font-family: $Raleway;
+  font-family: $raleway;
 
   @include breakpoint($large) {
     margin-top: 10px;
