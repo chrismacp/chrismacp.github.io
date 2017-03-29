@@ -13,7 +13,7 @@ tags:
 
 There has been much speculation about a mysterious 9th planetary body in our solar system. 
 Estimates of an exceptionally large and highly elliptical orbit of around 10,000–20,000 
-years mean it might be between 200 - 600 times further away from the sun than the earth!
+years meaning it might be between 200 - 600 times further away from the sun than the earth!
 
 [![Planet Nine animation](https://upload.wikimedia.org/wikipedia/commons/0/09/Planet_Nine_animation.gif)](https://commons.wikimedia.org/wiki/File%3APlanet_Nine_animation.gif "By nagualdesign (Own work, based on a video released by Caltech) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons")
 
