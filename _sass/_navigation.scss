@@ -460,7 +460,7 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 1rem;
-  font-family: $ubuntu-narrow;
+  font-family: $ubuntu;
   font-size: $type-size-5;
   font-weight: bold;
 }
@@ -469,7 +469,7 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  font-family: $ubuntu-narrow;
+  font-family: $ubuntu;
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
@@ -482,7 +482,7 @@
    ========================================================================== */
 
 .toc {
-  font-family: $ubuntu-narrow;
+  font-family: $ubuntu;
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
