@@ -111,12 +111,13 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $Ubuntu;
   font-size: $type-size-5;
 }
 
 .author__bio {
   margin: 0;
+  font-family: $Raleway;
 
   @include breakpoint($large) {
     margin-top: 10px;
