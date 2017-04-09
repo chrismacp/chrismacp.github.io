@@ -6,6 +6,8 @@ category:
   3dprint
 tags:
  - thingiverse
+ - "creator pro"
+ - "abs"
  - pangolin
  - \#WorldPangolinDay
 ---
