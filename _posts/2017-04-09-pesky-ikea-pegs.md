@@ -15,13 +15,13 @@ We bought a house a few years back and I am now trying to tidy it up little by l
 the things that has been bugging me for a while was a kitchen cupboard that had a missing shelf
 due to a few missing pegs that hold it up.
 
-It occurred to me last week that I could try to 3D print some new pegs and today I finally got some time to 
-see if it would work. TLDR: it does. 
+It occurred to me last week that I could try to 3D print some new pegs and today I finally got 
+some time to see if it would work. TLDR: it does. 
 
-Sometimes I get really excited and get [Blender](https://www.blender.org/) (amazing open-source 
-3D modelling application) fired up straight away, but I've learnt that it's
-really worthwhile checking the web first to see if someone has already put the effort in. Don't 
-re-invent the wheel, is what we'd say at work.
+Sometimes I get really excited and instantly fire up [Blender](https://www.blender.org/) (amazing 
+open-source 3D modelling application), but I've learnt that it's really worthwhile checking the 
+web first to see if someone has already put the effort in. Don't re-invent the wheel, is what we'd 
+say at work.
 
 So after about 30 seconds of Googling... I found this design:
 
