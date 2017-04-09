@@ -20,7 +20,7 @@ see if it would work. TLDR: it does.
 
 Sometimes I get really excited and get [Blender](https://www.blender.org/) (amazing open-source 
 3D modelling application) fired up straight away, but I've learnt that it's
-very worthwhile checking the web first to see if someone has already put the effort in. Don't 
+really worthwhile checking the web first to see if someone has already put the effort in. Don't 
 re-invent the wheel, is what we'd say at work.
 
 So after about 30 seconds of Googling... I found this design:
@@ -38,7 +38,7 @@ Here is the finished result.
 
 {% include figure image_path="/assets/images/pesky-ikea-pegs-2.jpg" alt="Printed pegs" caption="Printed pegs" %}
 
-And here is the shelf back in the cupboard, on the the next job.
+And here is the shelf back in the cupboard, on to the next job.
 
 {% include figure image_path="/assets/images/pesky-ikea-pegs-result.jpg" alt="Shelf back in action" caption="Shelf back in action" %}
 
