@@ -1,7 +1,7 @@
 ---
 title: "Learn to make music with Javascript"
 header:
-  image: /assets/images/waves.jpg
+  image: /assets/images/waves.png
 category:
  - music
  - dev
