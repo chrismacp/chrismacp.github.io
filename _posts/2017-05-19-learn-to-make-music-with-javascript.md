@@ -1,7 +1,7 @@
 ---
 title: "Learn to make music with Javascript"
 header:
-  image: /assets/images/pesky-ikea-pegs-background.jpg
+  image: /assets/images/waves.jpg
 category:
  - music
  - dev
