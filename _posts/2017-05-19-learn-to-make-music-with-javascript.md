@@ -30,8 +30,8 @@ what I'm doing on my hardware or software music tools, so this course seemed to 
 a new language or use more complicated tools. It's JavaScript after all!
 
 I've spent a few hours on the course now and built a mouse controlled thermin, a keyboard controlled oscillator and an 
-additive synth. you can try out my latest right here and now! Click in the red box below and then press any keys to 
-create new oscillators and space bar to fade them out. 
+additive synth. You can try out my latest project from the course right here and now! Click in the red box below and 
+then press any keys to create new oscillators and space bar to fade everything out. 
 
 
 <div style="background-color:red; height:50px"
