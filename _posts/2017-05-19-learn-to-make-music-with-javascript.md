@@ -16,7 +16,7 @@ I've often wanted to start creating music with code but have never bitten the bu
 Usually because I have 3 other web projects in progress (note to self, must finish things!).
 
 Today while checking my mail I noticed an email from FutureLearn which is an online learning 
-platofrm that I have done a few courses on with a range of topics such as [Moons](https://www.futurelearn.com/courses/moons/), 
+platform that I have completed a few courses on, with a range of topics such as [Moons](https://www.futurelearn.com/courses/moons/), 
 [Leading a Team](https://www.futurelearn.com/courses/leading-a-team) and
 [Electrify: An Introduction to Electrical and Electronic Engineering](https://www.futurelearn.com/courses/electrify/).
 
@@ -29,9 +29,10 @@ I have also been recently interested in learning about analogue synthesis from s
 what I'm doing on my hardware or software music tools, so this course seemed to fit the bill without me needing to learn 
 a new language or use more complicated tools. It's JavaScript after all!
 
-I've spent a few hour on the course now and built a mouse controlled thermin, a keyboard controlled oscillator and an 
-additive synth. Click in the red box below and then press any keys to create new oscillators and space bar to fade them out. 
-Try it now!
+I've spent a few hours on the course now and built a mouse controlled thermin, a keyboard controlled oscillator and an 
+additive synth. you can try out my latest right here and now! Click in the red box below and then press any keys to 
+create new oscillators and space bar to fade them out. 
+
 
 <div style="background-color:red; height:50px"
          tabindex="1"
@@ -89,6 +90,6 @@ Try it now!
 
  
 Here is the code for the example I mentioned above:
-<iframe src="https://live.codecircle.com/d/D9CbNxXzB82zpqqz6/view" width="700px" height="393px" frameborder="0"></iframe>
+
 
 
