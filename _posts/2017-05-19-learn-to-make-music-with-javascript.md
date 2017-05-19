@@ -88,8 +88,66 @@ create new oscillators and space bar to fade them out.
     
 </script>
 
- 
+<br />
+<br />
 Here is the code for the example I mentioned above:
+
+```
+<div style="background-color:red; height:50px"
+         tabindex="1"
+         onkeydown="parseControls(event.key)">
+</div>
+
+<script>
+    
+    var audioContext = window.AudioContext || window.webkitAudioContext;
+    var audContext = new audioContext();
+    
+    var oscillators = [];
+    var amps = [];
+    
+    function playSynth() {
+        var osc = audContext.createOscillator();
+        var amp = audContext.createGain();
+        amp.gain.value = 0.05;
+        osc.frequency.value = Math.random() * 500;
+        
+        oscillators.push(osc);
+        amps.push(amp);
+        
+        osc.connect(amp);
+        amp.connect(audContext.destination);
+        osc.start();
+    }
+    
+    function fadeOut(seconds) {
+        var now = audContext.currentTime;
+        for (var i = amps.length - 1; i>=0; i--) {
+            amps[i].gain.linearRampToValueAtTime(0, now + seconds);
+        }
+        setTimeout(stopSynth, seconds * 1000);
+    }
+    
+    function stopSynth() {
+        for (var i = oscillators.length - 1; i>=0; i--) {
+            oscillators[i].stop();
+        }
+    }
+    
+    function parseControls(key) {
+        switch(key) {
+            case " ":
+                fadeOut(5);
+                break;
+            default:
+                playSynth();
+        }
+    }
+
+    
+</script>
+```
+
 
 
 
