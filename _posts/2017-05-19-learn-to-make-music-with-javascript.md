@@ -35,12 +35,11 @@ create new oscillators and space bar to fade them out.
 
 
 <div style="background-color:red; height:50px"
-         tabindex="1"
-         onkeydown="parseControls(event.key)">
+    tabindex="1"
+    onkeydown="parseControls(event.key)">
 </div>
 
 <script>
-    
     var audioContext = window.AudioContext || window.webkitAudioContext;
     var audContext = new audioContext();
     
@@ -53,6 +52,7 @@ create new oscillators and space bar to fade them out.
         amp.gain.value = 0.05;
         osc.frequency.value = Math.random() * 500;
         
+        // Store references to these so we can fade/stop them later
         oscillators.push(osc);
         amps.push(amp);
         
@@ -147,6 +147,9 @@ Here is the code for the example I mentioned above:
     
 </script>
 ```
+
+I'd encourage anyone to try the course, it starts off at an easy level with little experience required and it's
+impressive how you can start generating quality sounds so quickly.  
 
 
 
