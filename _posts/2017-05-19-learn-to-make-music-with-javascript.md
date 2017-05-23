@@ -25,7 +25,7 @@ The name of this new (to me at least) course is
 and it caught my attention straight away. I'm fairly versed in JavaScript and knew of the 
 [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) but have never checked it out properly. 
 
-I have also been recently interested in learning about analogue synthesis from scratch to get a better understanding of 
+I have also recently been interested in learning about building analogue synthesis from scratch to get a better understanding of 
 what I'm doing on my hardware or software music tools, so this course seemed to fit the bill without me needing to learn 
 a new language or use more complicated tools. It's JavaScript after all!
 
