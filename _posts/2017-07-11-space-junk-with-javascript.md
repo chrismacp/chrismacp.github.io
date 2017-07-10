@@ -284,7 +284,7 @@ them here.
 
   A Python library for satellite propagation from TLE data
   
-* [http://www.amazon.co.uk/gp/product/B00HUEG8O6/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00HUEG8O6&linkCode=as2&tag=chrismacphers-21](3D Game Programming for Kids)
+* [3D Game Programming for Kids](http://www.amazon.co.uk/gp/product/B00HUEG8O6/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00HUEG8O6&linkCode=as2&tag=chrismacphers-21)
 
   A great and simple book for a quick start in to 3D JavaScript programming with three.js 
 
