@@ -18,6 +18,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <div id="space-junk"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/orbitcontrols.js"></script>
 <script>
 
   let container = $("#space-junk");
