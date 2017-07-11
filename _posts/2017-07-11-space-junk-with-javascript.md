@@ -51,7 +51,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
   WIDTH = container.offsetWidth;
   HEIGHT = WIDTH * getRatioFactor(aspectRatio)
 
-  container.css('height', HEIGHT + 'px');
+  $(container).css('height', HEIGHT + 'px');
 
   // This is where stuff in our animation will happen:
   scene = new THREE.Scene();
