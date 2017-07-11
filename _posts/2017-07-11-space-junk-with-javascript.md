@@ -201,7 +201,7 @@ return( arrData );
 
   // add a simple light
   function addLights() {
-  console.load("Adding lights");
+  console.log("Adding lights");
     light = new THREE.DirectionalLight(0xffffff);
     scene.add(light);
     light.position.set(POS_X, POS_Y, POS_Z);
@@ -209,7 +209,7 @@ return( arrData );
 
 
   function addSatellites() {
-console.load("Adding satellites");
+console.log("Adding satellites");
 jQuery.get('/assets/data/satellite-data.csv', function(data) {
   let satelliteData = csvToArray(data);
   // Create geometry to merge cubes in to for efficiency
