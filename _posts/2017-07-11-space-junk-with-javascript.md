@@ -173,6 +173,7 @@ return( arrData );
   function addEarth() {
     let spGeo = new THREE.SphereGeometry(637, 30, 30);
     let planetTexture = THREE.ImageUtils.loadTexture("/assets/images/globe-1.jpg");
+    planetTexture.minFilter = THREE.LinearFilter;
     let mat2 = new THREE.MeshPhongMaterial({
       map: planetTexture,
       shininess: 0.2
