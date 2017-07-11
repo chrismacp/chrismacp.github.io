@@ -161,7 +161,7 @@ strMatchedValue = arrMatches[ 3 ];
   // it to the data array.
   arrData[ arrData.length - 1 ].push( strMatchedValue );
 }
-
+console.log(arrData, 'arrData');
 // Return the parsed data.
 return( arrData );
   }
