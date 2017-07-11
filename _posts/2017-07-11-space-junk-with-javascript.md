@@ -246,7 +246,7 @@ cube.updateMatrix();
 geom.merge(cube.geometry, cube.matrix);
   });
 
-  let satellites = new THREE.Mesh(geom, new THREE.MeshFaceMaterial(materials));
+  let satellites = new THREE.Mesh(geom, new THREE.MultiMaterial(materials));
   scene.add(satellites);
   console.log("added satellites");
 });
