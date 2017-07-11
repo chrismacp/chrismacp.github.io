@@ -15,7 +15,7 @@ tags:
 This is a JavaScript model of the existing satellites oribiting our Earth at present 
 (only satellites updated in last 30 days).
 
-<div id="space-junk"></div>
+<div id="space-junk" style="height:300px;"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/assets/js/threejs/three.min.js"></script>
 <script src="/assets/js/threejs/OrbitControls.js"></script>
@@ -47,34 +47,34 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 
   function init() {
 
-    container.css('height', HEIGHT + 'px');
+container.css('height', HEIGHT + 'px');
 
-    // This is where stuff in our animation will happen:
-    scene = new THREE.Scene();
+// This is where stuff in our animation will happen:
+scene = new THREE.Scene();
 
-    // This will draw what the camera sees onto the screen:
-    renderer = new THREE.WebGLRenderer();
-    renderer.setSize(WIDTH, HEIGHT);
-    
-    // 3D red/green
-    //anaglyphRenderer = new THREE.AnaglyphEffect( renderer );
-    //anaglyphRenderer.setSize(WIDTH, HEIGHT);
+// This will draw what the camera sees onto the screen:
+renderer = new THREE.WebGLRenderer();
+renderer.setSize(WIDTH, HEIGHT);
 
-    renderer.setClearColor(0x111111);
-    container.append(renderer.domElement);
+// 3D red/green
+//anaglyphRenderer = new THREE.AnaglyphEffect( renderer );
+//anaglyphRenderer.setSize(WIDTH, HEIGHT);
 
-    // Create Globe
-    // setup a camera that points to the center
-    camera = new THREE.PerspectiveCamera(FOV, WIDTH / HEIGHT, NEAR, FAR);
-    camera.position.set(POS_X, POS_Y, POS_Z);
-    camera.lookAt(new THREE.Vector3(0, 0, 0));
-    scene.add(camera);
+renderer.setClearColor(0x111111);
+container.append(renderer.domElement);
 
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
-    //controls.target.copy( vector );
-    //controls = new THREE.OrbitControls(camera);
-    //        controls.damping = 0.2;
-    //controls.addEventListener('change', render);
+// Create Globe
+// setup a camera that points to the center
+camera = new THREE.PerspectiveCamera(FOV, WIDTH / HEIGHT, NEAR, FAR);
+camera.position.set(POS_X, POS_Y, POS_Z);
+camera.lookAt(new THREE.Vector3(0, 0, 0));
+scene.add(camera);
+
+controls = new THREE.OrbitControls( camera, renderer.domElement );
+//controls.target.copy( vector );
+//controls = new THREE.OrbitControls(camera);
+//        controls.damping = 0.2;
+//controls.addEventListener('change', render);
   }
 
   // ref: http://stackoverflow.com/a/1293163/2343
@@ -195,7 +195,7 @@ $.get('/assets/data/satellite-data.csv', function(data) {
   //var cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
   let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
   let materials = [];
-  angular.forEach(satelliteData, function (sat) {
+  $(satelliteData).each(function (sat) {
 
 let x = sat[0] / 10;
 let y = sat[1] / 10;
