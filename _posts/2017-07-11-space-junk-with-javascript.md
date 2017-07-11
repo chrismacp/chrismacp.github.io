@@ -22,7 +22,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <script>
 
   let container = $("#space-junk");
-  
+$(container).css('border', '1px solid red');
   let aspectRatio = '16:9';
   let POS_X = 1800;
   let POS_Y = 1000;
