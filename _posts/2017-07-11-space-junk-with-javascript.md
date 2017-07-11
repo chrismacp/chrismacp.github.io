@@ -19,12 +19,12 @@ No matter the size though, as orbiting the earth means moving at around 17500 mi
 any collisions are going to hurt!
 
 In order to avoid these collisions and protect our vital satellites and other craft within
-earth's surroundings all known pieces of junk, satellites and craft (all considered satellite
+earth's vicinity, all known pieces of junk, satellites and space-craft (all considered satellites
 herein) are automatically tracked.
 
-This is a JavaScript model of the existing satellites orbiting our Earth at present 
-(only satellites updated in last 30 days). There are around 12,000 <strong>so is a bit 
-heavy on the CPU</strong> 
+This is a JavaScript model of the existing satellites orbiting Earth at present 
+(only satellites updated in last 30 days). There are over 12,000 <strong>so it's a bit 
+heavy on the CPU</strong>.  
 
 <div id="space-junk" style="width:100%; background:black;"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
