@@ -14,13 +14,12 @@ tags:
 
 Junk in space varies in size from tiny shards of material, through gloves and tools 
 inadvertently dropped by astronauts in orbit, to large pieces of spacecraft and satellites.
-
 No matter the size though, as orbiting the earth means moving at around 17500 miles per hour
 any collisions are going to hurt!
 
 In order to avoid these collisions and protect our vital satellites and other craft within
-earth's vicinity, all known pieces of junk, satellites and space-craft (all considered satellites
-herein) are automatically tracked.
+earth's vicinity, all known pieces of junk large enough to detect, satellites and space-craft
+(all considered satellites herein) are constantly tracked. 
 
 This is a JavaScript model of the existing satellites orbiting Earth at present 
 (only satellites updated in last 30 days). There are over 12,000 <strong>so it's a bit 
