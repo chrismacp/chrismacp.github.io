@@ -161,7 +161,7 @@ strMatchedValue = arrMatches[ 3 ];
   // it to the data array.
   arrData[ arrData.length - 1 ].push( strMatchedValue );
 }
-console.log(arrData, 'arrData');
+
 // Return the parsed data.
 return( arrData );
   }
@@ -221,11 +221,11 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   let count = 0;
   
   jQuery.each(satelliteData, function (sat) {
-  
+  console.log(sat, "sat");
   // DEBUG /////////
   count++;
   if (count>10) return false;
-  // END DEBUG//////
+  // END DEBUG //////
   
 let x = sat[0] / 10;
 let y = sat[1] / 10;
