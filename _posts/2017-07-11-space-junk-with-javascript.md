@@ -21,31 +21,30 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <script src="/assets/js/threejs/OrbitControls.js"></script>
 <script>
 
-  let aspectRatio = '16:9';
-  let POS_X = 1800;
-  let POS_Y = 1000;
-  let POS_Z = 1800;
-  let WIDTH;
-  let HEIGHT;
+let aspectRatio = '16:9';
+let POS_X = 1800;
+let POS_Y = 1000;
+let POS_Z = 1800;
+let WIDTH;
+let HEIGHT;
 
-  let FOV = 45;
-  let NEAR = 1;
-  let FAR = 4000;
+let FOV = 45;
+let NEAR = 1;
+let FAR = 4000;
 
-  let controls, scene, camera, renderer;
+let controls, scene, camera, renderer;
 
-  function getRatioFactor(aspectRatio) {
-    switch (aspectRatio) {
-      case '16:9':
-        return 0.5625;
-      case '4:3':
-        return 0.75;
-    }
+function getRatioFactor(aspectRatio){
+  switch (aspectRatio) {
+    case '16:9':
+      return 0.5625;
+    case '4:3':
+      return 0.75;
   }
+}
 
-  function init() {
+function init(){
   
-  $("#space-junk").css('border', '1px solid red');
   WIDTH = $("#space-junk").outerWidth();
   HEIGHT = WIDTH * getRatioFactor(aspectRatio)
 
@@ -62,22 +61,17 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
   //anaglyphRenderer = new THREE.AnaglyphEffect( renderer );
   //anaglyphRenderer.setSize(WIDTH, HEIGHT);
 
-renderer.setClearColor(0x111111);
-$("#space-junk").append(renderer.domElement);
-
-// Create Globe
-// setup a camera that points to the center
-camera = new THREE.PerspectiveCamera(FOV, WIDTH / HEIGHT, NEAR, FAR);
-camera.position.set(POS_X, POS_Y, POS_Z);
-camera.lookAt(new THREE.Vector3(0, 0, 0));
-scene.add(camera);
-
-controls = new THREE.OrbitControls( camera, renderer.domElement );
-//controls.target.copy( vector );
-//controls = new THREE.OrbitControls(camera);
-//        controls.damping = 0.2;
-//controls.addEventListener('change', render);
-  }
+  renderer.setClearColor(0x111111);
+  $("#space-junk").append(renderer.domElement);
+    
+  // Create Globe
+  // setup a camera that points to the center
+  camera = new THREE.PerspectiveCamera(FOV, WIDTH / HEIGHT, NEAR, FAR);
+  camera.position.set(POS_X, POS_Y, POS_Z);
+  camera.lookAt(new THREE.Vector3(0, 0, 0));
+  scene.add(camera);
+    
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   // ref: http://stackoverflow.com/a/1293163/2343
   // This will parse a delimited string into an array of
@@ -88,82 +82,71 @@ controls = new THREE.OrbitControls( camera, renderer.domElement );
     // then default to comma.
     strDelimiter = (strDelimiter || ",");
 
-// Create a regular expression to parse the CSV values.
-let objPattern = new RegExp(
-    (
-      // Delimiters.
+    // Create a regular expression to parse the CSV values.
+    let objPattern = new RegExp(
+      (
+        // Delimiters.
         "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+        // Quoted fields.
+        "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+        // Standard fields.
+        "([^\"\\" + strDelimiter + "\\r\\n]*))"
+      ),
+      "gi"
+    );
 
-  // Quoted fields.
-"(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+    // Create an array to hold our data. Give the array
+    // a default empty first row.
+    let arrData = [[]];
+    
+    // Create an array to hold our individual pattern
+    // matching groups.
+    let arrMatches = null;
+    
+    // Keep looping over the regular expression matches
+    // until we can no longer find a match.
+    while(arrMatches = objPattern.exec(strData)){
 
-  // Standard fields.
-"([^\"\\" + strDelimiter + "\\r\\n]*))"
-    ),
-    "gi"
-);
-
-
-// Create an array to hold our data. Give the array
-// a default empty first row.
-let arrData = [[]];
-
-// Create an array to hold our individual pattern
-// matching groups.
-let arrMatches = null;
-
-
-// Keep looping over the regular expression matches
-// until we can no longer find a match.
-while (arrMatches = objPattern.exec( strData )){
-
-  // Get the delimiter that was found.
-  let strMatchedDelimiter = arrMatches[ 1 ];
-
-  // Check to see if the given delimiter has a length
-  // (is not the start of string) and if it matches
-  // field delimiter. If id does not, then we know
-  // that this delimiter is a row delimiter.
-  if (
-      strMatchedDelimiter.length &&
-      strMatchedDelimiter !== strDelimiter
-  ){
-
-// Since we have reached a new row of data,
-// add an empty row to our data array.
-arrData.push( [] );
-
-  }
-
-  let strMatchedValue;
-
-  // Now that we have our delimiter out of the way,
-  // let's check to see which kind of value we
-  // captured (quoted or unquoted).
-  if (arrMatches[ 2 ]){
-
-// We found a quoted value. When we capture
-// this value, unescape any double quotes.
-strMatchedValue = arrMatches[ 2 ].replace(
-    new RegExp( "\"\"", "g" ),
-    "\""
-);
-
-  } else {
-
-// We found a non-quoted value.
-strMatchedValue = arrMatches[ 3 ];
-
-  }
-
-
-  // Now that we have our value string, let's add
-  // it to the data array.
-  arrData[ arrData.length - 1 ].push( strMatchedValue );
-}
-
-// Return the parsed data.
-return( arrData );
+      // Get the delimiter that was found.
+      let strMatchedDelimiter = arrMatches[1];
+    
+      // Check to see if the given delimiter has a length
+      // (is not the start of string) and if it matches
+      // field delimiter. If id does not, then we know
+      // that this delimiter is a row delimiter.
+      if (
+        strMatchedDelimiter.length &&
+        strMatchedDelimiter !== strDelimiter
+      ){
+        // Since we have reached a new row of data,
+        // add an empty row to our data array.
+        arrData.push([]);
+      }
+    
+      let strMatchedValue;
+    
+      // Now that we have our delimiter out of the way,
+      // let's check to see which kind of value we
+      // captured (quoted or unquoted).
+      if (arrMatches[2]){
+        // We found a quoted value. When we capture
+        // this value, unescape any double quotes.
+        strMatchedValue = arrMatches[2].replace(
+          new RegExp( "\"\"", "g" ),
+          "\""
+        );
+      } else {
+        // We found a non-quoted value.
+        strMatchedValue = arrMatches[3];
+      }
+    
+      // Now that we have our value string, let's add
+      // it to the data array.
+      arrData[arrData.length - 1].push(strMatchedValue);
+    }
+    
+    // Return the parsed data.
+    return(arrData);
   }
 
 
@@ -171,7 +154,7 @@ return( arrData );
   // Earth radius = 6371 so we divided by 10 here
   function addEarth() {
     let spGeo = new THREE.SphereGeometry(637, 30, 30);
-    console.log("got here as well");
+    
     // load a resource
     var loader = new THREE.TextureLoader();
         loader.load(
@@ -179,7 +162,7 @@ return( arrData );
             "/assets/images/globe-1.jpg",
             // Function when resource is loaded
             function ( texture ) {
-            console.log("got here");
+            
                     texture.minFilter = THREE.LinearFilter;
                      let mat2 = new THREE.MeshPhongMaterial({
                        map: texture,
