@@ -157,29 +157,28 @@ function init(){
     
     // load a resource
     var loader = new THREE.TextureLoader();
-        loader.load(
-            // resource URL
-            "/assets/images/globe-1.jpg",
-            // Function when resource is loaded
-            function ( texture ) {
-            
-                    texture.minFilter = THREE.LinearFilter;
-                     let mat2 = new THREE.MeshPhongMaterial({
-                       map: texture,
-                       shininess: 0.2
-                     });
-                     sp = new THREE.Mesh(spGeo, mat2);
-                     scene.add(sp);
-            },
-            // Function called when download progresses
-            function ( xhr ) {
-                console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
-            },
-            // Function called when download errors
-            function ( xhr ) {
-                console.log( 'An error happened' );
-            }
-        );
+    loader.load(
+      // resource URL
+      "/assets/images/globe-1.jpg",
+      // Function when resource is loaded
+      function (texture){
+        texture.minFilter = THREE.LinearFilter;
+        let mat2 = new THREE.MeshPhongMaterial({
+          map: texture,
+          shininess: 0.2
+        });
+        sp = new THREE.Mesh(spGeo, mat2);
+        scene.add(sp);
+      },
+      // Function called when download progresses
+      function (xhr){
+        console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+      },
+      // Function called when download errors
+      function (xhr){
+        console.log('An error happened');
+      }
+    );
   }
 
   // add a simple light
@@ -191,41 +190,40 @@ function init(){
 
 
   function addSatellites() {
-console.log("Adding satellites");
-jQuery.get('/assets/data/satellite-data.csv', function(data) {
-  let satelliteData = csvToArray(data);
-  // Create geometry to merge cubes in to for efficiency
-  let geom = new THREE.Geometry();
-  let cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
-  //let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
-  let materials = [];
+    jQuery.get('/assets/data/satellite-data.csv', function(data) {
+      let satelliteData = csvToArray(data);
+      // Create geometry to merge cubes in to for efficiency
+      let geom = new THREE.Geometry();
+      let cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
+      //let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
+      let materials = [];
   
-  let count = 0;
+      let count = 0;
   
-  jQuery.each(satelliteData, function (key, sat) {
+      jQuery.each(satelliteData, function (key, sat) {
   
-let x = sat[0] / 10;
-let y = sat[1] / 10;
-let z = sat[2] / 10;
-let size = 5;
+        let x = sat[0] / 10;
+        let y = sat[1] / 10;
+        let z = sat[2] / 10;
+        let size = 5;
+    
+        //console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
+    
+        let cube = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
+        materials.push(cubeMat);
+    
+        cube.position.x = x;
+        cube.position.y = y;
+        cube.position.z = z;
+        cube.lookAt(new THREE.Vector3(0, 0, 0));
+    
+        cube.updateMatrix();
+        geom.merge(cube.geometry, cube.matrix);
+      });
 
-//console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
-
-let cube = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
-materials.push(cubeMat);
-
-cube.position.x = x;
-cube.position.y = y;
-cube.position.z = z;
-cube.lookAt(new THREE.Vector3(0, 0, 0));
-
-cube.updateMatrix();
-geom.merge(cube.geometry, cube.matrix);
-  });
-
-  let satellites = new THREE.Mesh(geom, new THREE.MultiMaterial(materials));
-  scene.add(satellites);
-});
+      let satellites = new THREE.Mesh(geom, new THREE.MultiMaterial(materials));
+      scene.add(satellites);
+    });
   }
 
   function createCube(x, y, z, colour, size) {
