@@ -202,7 +202,7 @@ return( arrData );
   // add a simple light
   function addLights() {
   console.log("Adding lights");
-    light = new THREE.DirectionalLight(0xffffff);
+    let light = new THREE.DirectionalLight(0xffffff);
     scene.add(light);
     light.position.set(POS_X, POS_Y, POS_Z);
   }
@@ -214,11 +214,19 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   let satelliteData = csvToArray(data);
   // Create geometry to merge cubes in to for efficiency
   let geom = new THREE.Geometry();
-  var cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
+  let cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
   //let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
   let materials = [];
+  
+  let count = 0;
+  
   jQuery.each(satelliteData, function (sat) {
-
+  
+  // DEBUG /////////
+  count++;
+  if (count>10) break;
+  // END DEBUG//////
+  
 let x = sat[0] / 10;
 let y = sat[1] / 10;
 let z = sat[2] / 10;
