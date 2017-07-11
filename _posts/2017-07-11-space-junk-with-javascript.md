@@ -21,7 +21,6 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <script src="/assets/js/threejs/OrbitControls.js"></script>
 <script>
 
-  let container;
   let aspectRatio = '16:9';
   let POS_X = 1800;
   let POS_Y = 1000;
@@ -46,12 +45,11 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 
   function init() {
   
-  container = $("#space-junk");
-  $(container).css('border', '1px solid red');
-  WIDTH = container.offsetWidth;
+  $("#space-junk").css('border', '1px solid red');
+  WIDTH = $("#space-junk").outerWidth();
   HEIGHT = WIDTH * getRatioFactor(aspectRatio)
 
-  $(container).css('height', HEIGHT + 'px');
+  $("#space-junk").css('height', HEIGHT + 'px');
 
   // This is where stuff in our animation will happen:
   scene = new THREE.Scene();
@@ -65,7 +63,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
   //anaglyphRenderer.setSize(WIDTH, HEIGHT);
 
 renderer.setClearColor(0x111111);
-container.append(renderer.domElement);
+$("#space-junk").append(renderer.domElement);
 
 // Create Globe
 // setup a camera that points to the center
