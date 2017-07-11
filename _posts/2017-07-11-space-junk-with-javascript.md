@@ -175,7 +175,7 @@ return( arrData );
     	// resource URL
     	'/assets/images/globe-1.jpg',
     	// Function when resource is loaded
-    	function (texture) {
+    	function (planetTexture) {
              let mat2 = new THREE.MeshPhongMaterial({
                map: planetTexture,
                shininess: 0.2
