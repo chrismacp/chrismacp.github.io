@@ -201,7 +201,6 @@ return( arrData );
 
   // add a simple light
   function addLights() {
-  console.log("Adding lights");
     let light = new THREE.DirectionalLight(0xffffff);
     scene.add(light);
     light.position.set(POS_X, POS_Y, POS_Z);
@@ -221,18 +220,13 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   let count = 0;
   
   jQuery.each(satelliteData, function (key, sat) {
-  console.log(sat, "sat");
-  // DEBUG /////////
-  count++;
-  if (count>10) return false;
-  // END DEBUG //////
   
 let x = sat[0] / 10;
 let y = sat[1] / 10;
 let z = sat[2] / 10;
 let size = 5;
 
-console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
+//console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
 
 let cube = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
 materials.push(cubeMat);
@@ -248,7 +242,6 @@ geom.merge(cube.geometry, cube.matrix);
 
   let satellites = new THREE.Mesh(geom, new THREE.MultiMaterial(materials));
   scene.add(satellites);
-  console.log("added satellites");
 });
   }
 
@@ -284,7 +277,6 @@ controls.update();
   
 
   $(document).ready(function () {
-  console.log("Page loaded");
   init();
 
   addEarth();
