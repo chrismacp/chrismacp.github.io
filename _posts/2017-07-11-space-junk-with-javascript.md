@@ -27,7 +27,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
   let POS_Y = 1000;
   let POS_Z = 1800;
   let WIDTH;
-  let HEIGHT = WIDTH * getRatioFactor(aspectRatio);
+  let HEIGHT;
 
   let FOV = 45;
   let NEAR = 1;
@@ -49,6 +49,7 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
   container = $("#space-junk");
   $(container).css('border', '1px solid red');
   WIDTH = container.offsetWidth;
+  HEIGHT = WIDTH * getRatioFactor(aspectRatio)
 
   container.css('height', HEIGHT + 'px');
 
