@@ -21,13 +21,12 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <script src="/assets/js/threejs/OrbitControls.js"></script>
 <script>
 
-  let container = $("#space-junk");
-$(container).css('border', '1px solid red');
+  let container;
   let aspectRatio = '16:9';
   let POS_X = 1800;
   let POS_Y = 1000;
   let POS_Z = 1800;
-  let WIDTH = container.offsetWidth;
+  let WIDTH;
   let HEIGHT = WIDTH * getRatioFactor(aspectRatio);
 
   let FOV = 45;
@@ -46,19 +45,23 @@ $(container).css('border', '1px solid red');
   }
 
   function init() {
+  
+  container = $("#space-junk");
+  $(container).css('border', '1px solid red');
+  WIDTH = container.offsetWidth;
 
-container.css('height', HEIGHT + 'px');
+  container.css('height', HEIGHT + 'px');
 
-// This is where stuff in our animation will happen:
-scene = new THREE.Scene();
+  // This is where stuff in our animation will happen:
+  scene = new THREE.Scene();
 
-// This will draw what the camera sees onto the screen:
-renderer = new THREE.WebGLRenderer();
-renderer.setSize(WIDTH, HEIGHT);
+  // This will draw what the camera sees onto the screen:
+  renderer = new THREE.WebGLRenderer();
+  renderer.setSize(WIDTH, HEIGHT);
 
-// 3D red/green
-//anaglyphRenderer = new THREE.AnaglyphEffect( renderer );
-//anaglyphRenderer.setSize(WIDTH, HEIGHT);
+  // 3D red/green
+  //anaglyphRenderer = new THREE.AnaglyphEffect( renderer );
+  //anaglyphRenderer.setSize(WIDTH, HEIGHT);
 
 renderer.setClearColor(0x111111);
 container.append(renderer.domElement);
