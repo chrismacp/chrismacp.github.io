@@ -169,29 +169,13 @@ return( arrData );
   // Earth radius = 6371 so we divided by 10 here
   function addEarth() {
     let spGeo = new THREE.SphereGeometry(637, 30, 30);
-    let loader = new THREE.TextureLoader();
-    // load a resource
-    loader.load(
-    	// resource URL
-    	'/assets/images/globe-1.jpg',
-    	// Function when resource is loaded
-    	function (planetTexture) {
-             let mat2 = new THREE.MeshPhongMaterial({
-               map: planetTexture,
-               shininess: 0.2
-             });
-             sp = new THREE.Mesh(spGeo, mat2);
-             scene.add(sp);
-    	},
-    	// Function called when download progresses
-    	function ( xhr ) {
-    		console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
-    	},
-    	// Function called when download errors
-    	function ( xhr ) {
-    		console.log( 'An error happened' );
-    	}
-    );
+    let planetTexture = THREE.ImageUtils.loadTexture("/assets/images/globe-1.jpg");
+    let mat2 = new THREE.MeshPhongMaterial({
+      map: planetTexture,
+      shininess: 0.2
+    });
+    sp = new THREE.Mesh(spGeo, mat2);
+    scene.add(sp);
   }
 
   // add a simple light
