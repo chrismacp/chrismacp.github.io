@@ -12,8 +12,19 @@ tags:
  - "Space Track"
 ---
 
-This is a JavaScript model of the existing satellites oribiting our Earth at present 
-(only satellites updated in last 30 days).
+Junk in space varies in size from tiny shards of material, through gloves and tools 
+inadvertently dropped by astronauts in orbit, to large pieces of spacecraft and satellites.
+
+No matter the size though, as orbiting the earth means moving at around 17500 miles per hour
+any collisions are going to hurt!
+
+In order to avoid these collisions and protect our vital satellites and other craft within
+earth's surroundings all known pieces of junk, satellites and craft (all considered satellite
+herein) are automatically tracked.
+
+This is a JavaScript model of the existing satellites orbiting our Earth at present 
+(only satellites updated in last 30 days). There are around 12,000 <strong>so is a bit 
+heavy on the CPU</strong> 
 
 <div id="space-junk" style="width:100%; background:black;"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -21,8 +32,10 @@ This is a JavaScript model of the existing satellites oribiting our Earth at pre
 <script src="/assets/js/threejs/OrbitControls.js"></script>
 <script src="/assets/js/space-junk.js"></script>
 
+
 This is my first attempt at modelling anything in 3D with JavaScript, and not being a maths expert, 
-I need to confirm how correct it is, but I think it looks like a good start.
+I need to confirm how correct it is, but I think it looks like a good start. The satellites are
+not to scale of course! 
 
 You can control the model, moving the earth around or zoom in and out using the mouse.
 
