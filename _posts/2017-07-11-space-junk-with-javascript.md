@@ -216,14 +216,14 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   //var cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
   let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
   let materials = [];
-  $(satelliteData).each(function (sat) {
+  jQuery.each(satelliteData, function (sat) {
 
 let x = sat[0] / 10;
 let y = sat[1] / 10;
 let z = sat[2] / 10;
 let size = 5;
 
-//console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
+console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
 
 let cube = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
 materials.push(cubeMat);
