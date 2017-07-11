@@ -220,7 +220,7 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   
   let count = 0;
   
-  jQuery.each(satelliteData, function (sat) {
+  jQuery.each(satelliteData, function (key, sat) {
   console.log(sat, "sat");
   // DEBUG /////////
   count++;
