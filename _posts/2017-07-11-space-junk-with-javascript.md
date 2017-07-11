@@ -224,7 +224,7 @@ jQuery.get('/assets/data/satellite-data.csv', function(data) {
   
   // DEBUG /////////
   count++;
-  if (count>10) break;
+  if (count>10) return false;
   // END DEBUG//////
   
 let x = sat[0] / 10;
