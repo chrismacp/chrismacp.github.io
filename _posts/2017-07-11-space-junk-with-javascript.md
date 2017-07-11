@@ -15,7 +15,7 @@ tags:
 This is a JavaScript model of the existing satellites oribiting our Earth at present 
 (only satellites updated in last 30 days).
 
-<div id="space-junk" style="height:500px; background:black;"></div>
+<div id="space-junk" style="width:100%; background:black;"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/assets/js/threejs/three.min.js"></script>
 <script src="/assets/js/threejs/OrbitControls.js"></script>
