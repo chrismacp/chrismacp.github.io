@@ -174,31 +174,31 @@ function addSatellites() {
         let satelliteData = csvToArray(data);
         // Create geometry to merge cubes in to for efficiency
         let geom = new THREE.Geometry();
-        let cubeMat = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
-        //let cubeMat = new THREE.MeshLambertMaterial({opacity: 0.6});
+        let satelliteMaterial = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 0.6, emissive: 0xffffff});
+        //let satelliteMaterial = new THREE.MeshLambertMaterial({opacity: 0.6});
         let materials = [];
 
         let count = 0;
 
-        jQuery.each(satelliteData, function (key, sat) {
+        jQuery.each(satelliteData, function (key, satCoords) {
 
-            let x = sat[0] / 10;
-            let y = sat[1] / 10;
-            let z = sat[2] / 10;
+            let x = satCoords[0] / 10;
+            let y = satCoords[1] / 10;
+            let z = satCoords[2] / 10;
             let size = 5;
 
-            //console.log('Creating cube at ' + x + ', ' + y + ', ' + z);
+            //console.log('Creating sat at ' + x + ', ' + y + ', ' + z);
 
-            let cube = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
-            materials.push(cubeMat);
+            let sat = new THREE.Mesh(new THREE.BoxGeometry(size, size, size, 1, 1, 1));
+            materials.push(satelliteMaterial);
 
-            cube.position.x = x;
-            cube.position.y = y;
-            cube.position.z = z;
-            cube.lookAt(new THREE.Vector3(0, 0, 0));
+            sat.position.x = x;
+            sat.position.y = y;
+            sat.position.z = z;
+            sat.lookAt(new THREE.Vector3(0, 0, 0));
 
-            cube.updateMatrix();
-            geom.merge(cube.geometry, cube.matrix);
+            sat.updateMatrix();
+            geom.merge(sat.geometry, sat.matrix);
         });
 
         let satellites = new THREE.Mesh(geom, new THREE.MultiMaterial(materials));
@@ -206,15 +206,13 @@ function addSatellites() {
     });
 }
 
-function createCube(x, y, z, colour, size) {
+function createSatellite(x, y, z, colour, size) {
     if (!colour) {
         colour = 0xffffff;
     }
-
     if (!size) {
         size = 5;
     }
-
     return cube;
 }
 
