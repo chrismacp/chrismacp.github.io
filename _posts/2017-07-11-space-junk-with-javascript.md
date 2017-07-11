@@ -179,6 +179,7 @@ return( arrData );
             "/assets/images/globe-1.jpg",
             // Function when resource is loaded
             function ( texture ) {
+            console.log("got here");
                     texture.minFilter = THREE.LinearFilter;
                      let mat2 = new THREE.MeshPhongMaterial({
                        map: texture,
@@ -273,6 +274,7 @@ controls.update();
   init();
 
   $().ready(function () {
+  console.log("got here first");
     addEarth();
     addLights();
     addSatellites();
