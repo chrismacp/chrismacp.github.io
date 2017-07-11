@@ -172,6 +172,7 @@ return( arrData );
   // Earth radius = 6371 so we divided by 10 here
   function addEarth() {
     let spGeo = new THREE.SphereGeometry(637, 30, 30);
+    console.log("got here as well");
     // load a resource
     var loader = new THREE.TextureLoader();
         loader.load(
