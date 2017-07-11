@@ -209,7 +209,7 @@ return( arrData );
 
   function addSatellites() {
 
-$.get('/assets/data/satellite-data.csv', function(data) {
+jQuery.get('/assets/data/satellite-data.csv', function(data) {
   let satelliteData = csvToArray(data);
   // Create geometry to merge cubes in to for efficiency
   let geom = new THREE.Geometry();
@@ -273,7 +273,7 @@ controls.update();
 
   init();
 
-  $().ready(function () {
+  $(document).ready(function () {
   console.log("got here first");
     addEarth();
     addLights();
