@@ -2,6 +2,7 @@
 title: "Space Junk with Javascript"
 header:
   image: /assets/images/space-junk-header.jpg
+  caption: "Photo credit: [N.A.S.A.](https://www.orbitaldebris.jsc.nasa.gov/photo-gallery.html)"
 category:
  - science
  - dev
@@ -41,6 +42,9 @@ You can control the model, moving the earth around or zoom in and out using the 
 I found quite a number of useful sites and code libraries to help me make this so I've listed
 them here.
 
+* [N.A.S.A. Orbital Debris Program](https://www.orbitaldebris.jsc.nasa.gov/)
+
+  Information about the research of space debris done by N.A.S.A.
 
 * [Space Track](https://www.space-track.org)
 
