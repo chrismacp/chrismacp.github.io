@@ -27,6 +27,7 @@ This is a JavaScript model of the existing satellites orbiting Earth at present
 heavy on the CPU</strong>.  
 
 <div id="space-junk" style="width:100%; background:black;"></div>
+<br /><br />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/assets/js/threejs/three.min.js"></script>
 <script src="/assets/js/threejs/OrbitControls.js"></script>
