@@ -1,7 +1,7 @@
 ---
 title: "Space Junk with Javascript"
 header:
-  image: /assets/images/space-junk-header.png
+  image: /assets/images/space-junk-header.jpg
 category:
  - science
  - dev
