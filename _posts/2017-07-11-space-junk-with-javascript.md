@@ -55,7 +55,7 @@ them here.
   A JavaSript library for satellite propagation from TLE data (Not using this in the end as
     pre-processing the data in Python to save bandwidth)
     
-* [sgp4](https://pypi.python.org/pypi/sgp4/")
+* [sgp4](https://pypi.python.org/pypi/sgp4)
 
   A Python library for satellite propagation from TLE data
   
