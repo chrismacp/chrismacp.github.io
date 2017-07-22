@@ -1,73 +1,26 @@
 ---
-title: "Benchmarking in Java with JMH"
+title: "Waiting for OS Upgrade"
 header:
-  image: /assets/images/.jpg
-  caption: "Photo credit: [Someone](someurl)"
+  image: /assets/images/20170522_jupiter-juno-p5.jpg
+  caption: "Photo credit: [N.A.S.A.](https://nasa.tumblr.com/post/162828438059/solar-system-things-to-know-this-week)"
 category:
- - dev
+ - music
  
 tags:
- - java
- - JMH
- - "software craftmanship"
+ - techno
+ - "ableton-live"
+ - "quick-blast"
 ---
 
-I have recently been trying out some problems on the [CodeWars]() website to help me practice 
-my algorithm design. One part of creating quality solutions is ensuring high performance and
-measuring that correctly is not a straight forward as some think. 
+The first post for music on here. I had some fun while waiting for my OS to upgrade 
+last night. Well to be honest, I was going to try and master a previous track I had made,
+but decided to upgrade to the latest macOS Sierra (and amazingly it didn't seem to break 
+lots of stuff this time, well done guys!) and got the bug for making a new tune while I was
+waiting and playing about on a JU-06.
 
-A quick search and you start to find people suggesting simple checks with System.currentTimeMillis()
-or the like, but surely that will test everything running on your machine rather that just 
-the isolated piece of code itself!
+Here is it anyway, unfinished as always :)
 
-One tool that looks to help accurately measure your piece of code, avoiding any other
-system processing or JVM tweaks
-
-<div id="space-junk" style="width:100%; background:black;"></div>
-<br /><br />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="/assets/js/threejs/three.min.js"></script>
-<script src="/assets/js/threejs/OrbitControls.js"></script>
-<script src="/assets/js/space-junk.js"></script>
-
-
-This is my first attempt at modelling anything in 3D with JavaScript, and not being a maths expert, 
-I need to confirm how correct it is, but I think it looks like a good start. The satellites are
-not to scale of course! 
-
-You can control the model, moving the earth around or zoom in and out using the mouse.
-
-I found quite a number of useful sites and code libraries to help me make this so I've listed
-them here.
-
-* [N.A.S.A. Orbital Debris Program](https://www.orbitaldebris.jsc.nasa.gov/)
-
-  Information about the research of space debris done by N.A.S.A.
-
-* [Space Track](https://www.space-track.org)
-
-  Data source for satellite position information
-  
-* [three.js World Globe Tutorial](http://www.smartjava.org/content/render-open-data-3d-world-globe-threejs)
-
-  Very useful information on creating a world globe in JavaScript.
-  
-* [satellite.js](https://github.com/shashwatak/satellite-js)
-
-  A JavaSript library for satellite propagation from TLE data (Not using this in the end as
-    pre-processing the data in Python to save bandwidth)
-    
-* [sgp4](https://pypi.python.org/pypi/sgp4)
-
-  A Python library for satellite propagation from TLE data
-  
-* [3D Game Programming for Kids](http://www.amazon.co.uk/gp/product/B00HUEG8O6/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00HUEG8O6&linkCode=as2&tag=chrismacphers-21)
-
-  A great and simple book for a quick start in to 3D JavaScript programming with three.js 
-
-
-
-
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334337766&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
 
 
