@@ -14,9 +14,10 @@ tags:
 
 The first post for music on here. I had some fun while waiting for my OS to upgrade 
 last night. Well to be honest, I was going to try and master a previous track I had made,
-but decided to upgrade to the latest macOS Sierra (and amazingly it didn't seem to break 
-lots of stuff this time, well done guys!) and got the bug for making a new tune while I was
-waiting and playing about on a JU-06.
+but decided to upgrade to the latest macOS Sierra (~~and amazingly it didn't seem to break 
+lots of stuff this time, well done guys!~~ spoke too soon, screenshot shortcuts are broken
+I wonder what else this time, it really does not just work!) and got the bug for making a 
+new tune while I was waiting and playing about on a JU-06.
 
 Here is it anyway, unfinished as always :)
 
