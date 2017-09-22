@@ -13,7 +13,7 @@ tags:
  - "cassini–huygens"
 ---
 
-Watching a space craft burn up after decades of operation is not something that happens 
+Witnessing a spacecraft burn up after decades of operation is not something that happens 
 very often. This week the [Cassini-Huygens][1] mission ended after a very successful 27 year trip to, 
 and around, Saturn. It has really opened up this magical planet with many discoveries about
 the planet, it's rings and also the many interesting moons.
