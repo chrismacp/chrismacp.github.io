@@ -18,7 +18,7 @@ very often. This week the [Cassini-Huygens][1] mission ended after a very succes
 and around, Saturn. It has really opened up this magical planet with many discoveries about
 the planet, it's rings and also the many interesting moons.
 
-One of my all-time favourite science videos came from data and images sent to 
+One of my all-time favourite science videos was created from data and images sent to 
 earth from the [Huygens][2] lander. Released from Cassini on December 25, 2004 and landing on
 Titan January 14, 2005, the video is a sped up 4 hour journey to the surface which also
 shows instrumentation and uses audio to indicate motions and instrument operations. 
