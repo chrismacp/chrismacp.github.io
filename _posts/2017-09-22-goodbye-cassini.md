@@ -26,7 +26,7 @@ shows instrumentation and uses audio to indicate motions and instrument operatio
 <div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/l-rOw0Tj5UM?ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div> 
 [Credits: ESA/NASA/JPL/University of Arizona][3]
 
-#### Discoveries
+### Discoveries
 A few important discoveries (of many) that Cassini made:
 
 * Seven new moons orbiting Saturn: [Methone][4], [Pallene][5], [Polydeuces][6], [Daphnis][7], [Anthe][8], [Aegaeon][9], [S/2009 S 1][10]
