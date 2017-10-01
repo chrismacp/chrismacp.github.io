@@ -5,8 +5,7 @@ header:
   image: /assets/images/globular-cluster-IC-4499.jpg
   caption: "Photo credit: NASA/ESA"
 category:
- - science
- 
+ - dev
 tags:
  - microservices
  - SOA
