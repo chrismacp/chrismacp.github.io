@@ -2,7 +2,7 @@
 title: "Managing More Micro-services"
 date: 2017-10-01
 header:
-  image: /assets/globular-cluster-IC-4499.jpg
+  image: /assets/images/globular-cluster-IC-4499.jpg
   caption: "Photo credit: NASA/ESA"
 category:
  - science
