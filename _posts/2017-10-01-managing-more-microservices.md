@@ -75,6 +75,7 @@ This means just keeping one tab open and having the flexibility to get what I wa
 
 
 On our large screen we use the wall mode
+
 [1]: http://chrismacpherson.net/dev/microxchange-berlin/
 [2]: https://jenkins.io/doc/book/pipeline/
 [3]: https://jenkins.io/doc/book/pipeline/jenkinsfile/
