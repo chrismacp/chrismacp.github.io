@@ -71,8 +71,9 @@ work.
 
 Now I use one single Kibana page and have created a filter for each of the following:
 
-"type: <service-name>" (for each of the service)
-"tags: <log-type>" (for each of the log types)
+"type: &lt;service-name&gt;" (for each of the service)
+
+"tags: &lt;log-type&gt;" (for each of the log types)
 
 Then in the Kibana UI I can quickly switch on and off the service and log type I want to 
 look at. This means just keeping one tab open and having the flexibility to get what I 
