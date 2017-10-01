@@ -22,26 +22,28 @@ At that point, the thought of creating and managing a lot more services brought 
 of the team spending most of it's time watching monitoring screens. Along the way though, 
 we have improved how we do certain things so that we see more with less time and effort.
 
-This post explains some of things that we have done. 
+Engineers are busy and do not always look at monitoring, in fact they don't always look 
+at email or anything else either, so making things visible can be hard. This post 
+explains some of the steps we have taken to improve this. 
 
 ## Team Monitor
-We obtained a large 42" monitor which sits at one end of the team's desks. On this we display 
-all the monitoring screens for all of our projects using a tab rotation plug-in to 
-automatically show each one in turn. 
+We obtained a large 42" monitor which sits at one end of the team's desks. On this we have
+a browser in full screen mode and a tab rotation plug-in which automatically rotates 
+through the following for each service:
 
-People are busy and do not always look at monitoring, in fact they don't always look at email
-or anything else either, so making things visible can be hard.
+Jenkins jobs, Sonar code metrics, Grafana dashboard, Kibana error logs
 
 ## Slack Notifications
-Something that people do tend to notice is Slack (or your text chat software of choice). As
-we and most other engineering departments use text chat to perform a large percentage of
-direct communicate, adding notifications there for important events does work. We have 
-added notifications when:
+Something that people do tend to keep eyes on is Slack (or your text chat software of 
+choice). As we and most other engineering departments use text chat to perform a large 
+percentage of direct communicate, adding notifications there for important events does 
+work. We have added notifications when:
 
 * Jenkins builds (deployments) break
 * Grafana metrics go in to alert mode (API Response times slow down)
 
-You have to be careful with this though, if there are too many, then they start to get ignored. 
+You have to be careful with this though, if there are too many, then they start to get 
+ignored, or engineers get unhappy with the distraction caused.
 
 ## Jenkins Pipelines
 Normally for each service we had around 5/6 Jenkins jobs, some of which trigger one after
@@ -69,10 +71,10 @@ work.
 
 Now I use one single Kibana page and have created a filter for each of the following:
 
-"type: <project-name>" (for each of the service)
+"type: <service-name>" (for each of the service)
 "tags: <log-type>" (for each of the log types)
 
-Then in the Kibana UI I can quickly switch on and off the project and log type I want to 
+Then in the Kibana UI I can quickly switch on and off the service and log type I want to 
 look at. This means just keeping one tab open and having the flexibility to get what I 
 want fast. 
 
