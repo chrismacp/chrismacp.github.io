@@ -52,11 +52,11 @@ That was ~18 jobs to watch for our 3 services, but now we have 10 services and r
 60 Jenkins jobs.
 
 There is a Jenkins feature called a [Pipeline][2] which allows us to combine all of the jobs
-for one service deployment in to one. 
+for one service deployment together in to one job. 
 
 You can improve things further, Configuration as Code style, by using a [Jenkinsfile][3] 
 written in Groovy to store the Jenkins pipeline deployment process in your repository 
-alongside your source code.
+alongside your source code. Nice!
 
 The end result is that we now have 10 job status' to look at instead of 60. We also make 
 use of the [wall display plug-in][4] on our large team monitor to make add even more
