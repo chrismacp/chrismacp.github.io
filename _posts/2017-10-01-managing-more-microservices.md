@@ -18,7 +18,7 @@ tags:
 When I wrote the first [post][1] on this blog I had been working on SOA and micro-services
 for a short time and was managing 3 individual services with my team.
 
-At that point, the thought of creating and managing a lot more services brought up images 
+At that point, the thought of creating and managing many more services brought up images 
 of the team spending most of it's time watching monitoring screens. Along the way though, 
 we have improved how we do certain things so that we see more with less time and effort.
 
