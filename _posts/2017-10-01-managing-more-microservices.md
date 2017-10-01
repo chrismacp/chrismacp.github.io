@@ -24,7 +24,7 @@ we have improved how we do certain things so that we see more with less time and
 
 This post explains some of things that we have done. 
 
-## Team monitor
+## Team Monitor
 We obtained a large 42" monitor which sits at one end of the team's desks. On this we display 
 all the monitoring screens for all of our projects using a tab rotation plug-in to 
 automatically show each one in turn. 
