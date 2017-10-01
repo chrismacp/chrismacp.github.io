@@ -27,7 +27,7 @@ This post explains some of things that we have done.
 ## Team monitor
 We obtained a large 42" monitor which sits at one end of the team's desks. On this we display 
 all the monitoring screens for all of our projects using a tab rotation plug-in to 
-automatically show each oen in turn. 
+automatically show each one in turn. 
 
 People are busy and do not always look at monitoring, in fact they don't always look at email
 or anything else either, so making things visible can be hard.
