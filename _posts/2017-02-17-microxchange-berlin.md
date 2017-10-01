@@ -1,5 +1,6 @@
 ---
 title: "MicroXchg - Berlin"
+date: 2017-02-17
 header:
   image: /assets/images/Calabash_HubbleSchmidt_1280.jpg
 category:
@@ -12,8 +13,6 @@ tags:
 ---
 
 MicroXchg Conference, Berlin
-
-18th February 2017
 
 This was my first time at the MicroXchg conference in Berlin. All the talks were
 focussed on [microservices](https://en.wikipedia.org/wiki/Microservices) and as my company is migrating towards a 

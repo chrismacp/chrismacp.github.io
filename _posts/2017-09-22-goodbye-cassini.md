@@ -1,5 +1,6 @@
 ---
 title: "Goodbye Cassini"
+date: 2017-09-22
 header:
   image: /assets/images/enceladus.jpg
   caption: "Photo credit: NASA/JPL/Space Science Institute"

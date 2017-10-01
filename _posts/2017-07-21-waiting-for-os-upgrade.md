@@ -1,5 +1,6 @@
 ---
 title: "Waiting for OS Upgrade"
+date: 2017-07-21
 header:
   image: /assets/images/20170522_jupiter-juno-p5.jpg
   caption: "Photo credit: [N.A.S.A.](https://nasa.tumblr.com/post/162828438059/solar-system-things-to-know-this-week)"

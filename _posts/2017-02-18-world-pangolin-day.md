@@ -1,5 +1,6 @@
 ---
 title: "Pangolin Day"
+date: 2017-02-18
 header:
   image: /assets/images/pangolin1.png
 category:

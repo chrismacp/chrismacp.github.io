@@ -1,5 +1,6 @@
 ---
 title: "Learn to make music with Javascript"
+date: 2017-05-19
 header:
   image: /assets/images/waves.png
 category:

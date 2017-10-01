@@ -1,5 +1,6 @@
 ---
 title: "Pesky Ikea Pegs"
+date: 2017-04-09
 header:
   image: /assets/images/pesky-ikea-pegs-background.jpg
 category:
