@@ -71,12 +71,12 @@ work.
 
 Now I use one single Kibana page and have created a filter for each of the following:
 
-"type: &lt;service-name&gt;" (for each of the service)
+"type: &lt;service-name&gt;" (for each of the services)
 
 "tags: &lt;log-type&gt;" (for each of the log types)
 
-Then in the Kibana UI I can quickly switch on and off the service and log type I want to 
-look at. This means just keeping one tab open and having the flexibility to get what I 
+Then in the Kibana UI I can quickly toggle the service and log type that I want to 
+look at. This means keeping just one tab open but having the flexibility to get what I 
 want fast. 
 
 [1]: http://chrismacpherson.net/dev/microxchange-berlin/
