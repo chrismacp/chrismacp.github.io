@@ -64,7 +64,7 @@ visibility.
 
 
 ## Kibana Filtering
-With an error, access and info log for each service there is a lot of logging to look keep
+With an error, access and info log for each service there is a lot of logging to keep
 your eyes on. At first I kept a browser tab open for each service's error log so I could 
 quickly check it regularly. With the increase in number of services this wasn't going to 
 work. 
