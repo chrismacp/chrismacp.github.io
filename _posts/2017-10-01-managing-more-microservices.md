@@ -15,7 +15,7 @@ tags:
  - slack
 ---
 
-When I wrote the initial [post][1] on this blog I had been working on with micro-services
+When I wrote the initial [post][1] on this blog I had been working on micro-services
 for a short time and was managing 3 individual services with my team.
 
 At that point, the thought of creating and managing many more services brought up images 
