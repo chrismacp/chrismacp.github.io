@@ -36,7 +36,7 @@ Jenkins jobs, Sonar code metrics, Grafana dashboard, Kibana error logs
 ## Slack Notifications
 Something that people do tend to keep eyes on is Slack (or your text chat software of 
 choice). As we and most other engineering departments use text chat to perform a large 
-percentage of direct communicate, adding notifications there for important events does 
+percentage of direct communication, adding notifications there for important events does 
 work. We have added notifications when:
 
 * Jenkins builds (deployments) break
@@ -59,7 +59,7 @@ written in Groovy to store the Jenkins pipeline deployment process in your repos
 alongside your source code. Nice!
 
 The end result is that we now have 10 job status' to look at instead of 60. We also make 
-use of the [wall display plug-in][4] on our large team monitor to make add even more
+use of the [wall display plug-in][4] on our large team monitor to add even more
 visibility.
 
 
