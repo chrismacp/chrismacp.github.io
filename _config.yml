@@ -248,4 +248,4 @@ defaults:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "your-disqus-shortname"
+    shortname: "chrismacpherson-net.disqus.com"
