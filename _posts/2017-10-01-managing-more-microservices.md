@@ -13,6 +13,10 @@ tags:
  - kibana
  - grafana
  - slack
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "chrismacpherson.net.disqus.com"
 ---
 
 When I wrote the initial [post][1] on this blog I had been working on micro-services
