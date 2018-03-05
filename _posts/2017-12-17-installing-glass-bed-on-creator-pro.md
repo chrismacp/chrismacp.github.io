@@ -1,86 +1,79 @@
 ---
-title: "Managing More Micro-services"
-date: 2017-10-01
+title: "Installing a Glass Bed on the Creator Pro"
+date: 2017-12-17
 header:
   image: /assets/images/globular-cluster-IC-4499.jpg
-  caption: "Photo credit: NASA/ESA"
 category:
- - dev
+ - 3dprint
 tags:
- - microservices
- - SOA
- - jenkins
- - kibana
- - grafana
- - slack
+ - thingiverse
+ - "creator pro"
+ - glass
+ - bed
+ - pla
+ - abs
 
 ---
 
-When I wrote the initial [post][1] on this blog I had been working on micro-services
-for a short time and was managing 3 individual services with my team.
+I finally bought a glass bed for my Creator-Pro 3D printer after destroying the last of the
+plastic bed sheets that were supplied with the machine. Unfortunately I was cutting them 
+with my tools whilst trying to remove prints from the bed, usually when I'm a bit over eager.
 
-At that point, the thought of creating and managing many more services brought up images 
-of the team spending most of it's time watching monitoring screens. Along the way though, 
-we have improved how we do certain things so that we see more with less time and effort.
+I have read up about glass beds a fair bit in the past and knew they would probably perform better
+but I do think the plastic sheets supplied from Flash Forge were actually pretty good. It's good 
+to try other things out though and the general consensus I got was to go for glass.
 
-Engineers are busy and do not always look at monitoring, in fact they don't always look 
-at email or anything else either, so making things visible can be hard. This post 
-explains some of the steps we have taken to improve this. 
+## Buying the Glass
+A lot of people suggest that standard glass will work fine and there is no need to go for the
+Borosilicate type which has higher temperature thresholds and can deal with the heat cycles we
+will put through it. 
 
-## Team Monitor
-We obtained a large 42" monitor which sits at one end of the team's desks. On this we have
-a browser in full screen mode and a tab rotation plug-in which automatically rotates 
-through the following for each service:
+I decided to pay a bit more first time round to hopefully rule out any other issues that might arise
+from using standard glass. I ended up buying this [4mm replacement borosilicate glass bed][1] which 
+cost me about £30 including taxes shipping (signed-for). It does seem a lot for a small bit of 
+glass but next time I should feel more comfortable trying cheaper options out. 
 
-Jenkins jobs, Sonar code metrics, Grafana dashboard, Kibana error logs
+## Installing
+Just whacking the glass on the top of the Creator Pro's bed is not enough, it must be secured in place
+to avoid any jiggling around whilst printing.
 
-## Slack Notifications
-Something that people do tend to keep eyes on is Slack (or your text chat software of 
-choice). As we and most other engineering departments use text chat to perform a large 
-percentage of direct communication, adding notifications there for important events does 
-work. We have added notifications when:
+There are many solutions to this. When I first read up on this topic a year or so ago it seemed
+most people were using clips to holds the glass, but now it appears things have moved on a 
+little and there are various printable products that can do the job. Luckily I still had some 
+space on my original plastic bed to print out what I needed.
 
-* Jenkins builds (deployments) break
-* Grafana metrics go in to alert mode (API Response times slow down)
+* First up were the [glass brackets which I found on Thingiverse][2]. These printed well first time
+and were easy to attach. 
 
-You have to be careful with this though, if there are too many, then they start to get 
-ignored, or engineers get unhappy with the distraction caused.
+{% include figure image_path="/assets/images/installing-glass-bed/brackets-holding-glass.jpg" alt="Brackets holding glass" caption="Brackets holding glass" %}
 
-## Jenkins Pipelines
-Normally for each service we had around 5/6 Jenkins jobs, some of which trigger one after
-the other for a deployment. Something like: build, dockerize, test, staging, production. 
-That was ~18 jobs to watch for our 3 services, but now we have 10 services and roughly 
-60 Jenkins jobs.
+{% include figure image_path="/assets/images/installing-glass-bed/glass-bed-brackets-printed.jpg" alt="Glass bed brackets printed" caption="Glass bed brackets printed" %}
 
-There is a Jenkins feature called a [Pipeline][2] which allows us to combine all of the jobs
-for one service deployment together in to one job. 
+{% include figure image_path="/assets/images/installing-glass-bed/measure-glass.jpg" alt="Measure glass" caption="Measure glass" %}
 
-You can improve things further, Configuration as Code style, by using a [Jenkinsfile][3] 
-written in Groovy to store the Jenkins pipeline deployment process in your repository 
-alongside your source code. Nice!
+* Then I also needed a [shim][3] to make sure the printer knows the bed is a little higher than
+usual, due of course, to the extra thickness of the glass. Placing this shim on top of the horizontal 
+plate behind the Flash Forge logo decreases the height at which the z-axis limiter is triggered, 
+stopping the printer nozzles from being pushed in to the bed.
 
-The end result is that we now have 10 job status' to look at instead of 60. We also make 
-use of the [wall display plug-in][4] on our large team monitor to add even more
-visibility.
+{% include figure image_path="/assets/images/installing-glass-bed/measure-shim.jpg" alt="Measure shim" caption="Measure shim" %}
 
+{% include figure image_path="/assets/images/installing-glass-bed/shim-location.jpg" alt="Shim location" caption="Shim location" %}
 
-## Kibana Filtering
-With an error, access and info log for each service there is a lot of logging to keep
-your eyes on. At first I kept a browser tab open for each service's error log so I could 
-quickly check it regularly. With the increase in number of services this wasn't going to 
-work. 
+It was pretty quick to print and install these parts. I used some PLA that I got with the machine as it's
+pretty hard waring.
 
-Now I use one single Kibana page and have created a filter for each of the following:
+## Results
+I've tried printing a few items now and am still to find the best settings for PLA. Currently I am printing
+a circular coaster for a Christmas present and it's going well, only a small amount of warping on the first
+layer. 
 
-"type: &lt;service-name&gt;" (for each of the services)
+My first attempts had a lot of warping where it looked all kind of mushy. This, I think, was due to the PLA
+cooling and raising off the bed. I slowed down the print speed of the first layer and also reduced the bed 
+temp from 70&deg; to 60&deg; which seems to have reduced this problem a great deal. Not perfect yet though.    
 
-"tags: &lt;log-type&gt;" (for each of the log types)
+Drop me a comment if you have any tips! :)
 
-Then in the Kibana UI I can quickly toggle the service and log type that I want to 
-look at. This means keeping just one tab open but having the flexibility to get what I 
-want fast. 
-
-[1]: http://chrismacpherson.net/dev/microxchange-berlin/
-[2]: https://jenkins.io/doc/book/pipeline/
-[3]: https://jenkins.io/doc/book/pipeline/jenkinsfile/
-[4]: https://wiki.jenkins.io/display/JENKINS/Wall+Display+Plugin
+[1]: https://technologyoutlet.co.uk/products/borosilicate-glass-bed
+[2]: https://www.thingiverse.com/thing:1291106
+[3]: https://www.thingiverse.com/thing:2023739
