@@ -61,7 +61,7 @@ stopping the printer nozzles from being pushed in to the bed.
 {% include figure image_path="/assets/images/installing-glass-bed/shim-location.jpg" alt="Shim location" caption="Shim location" %}
 
 It was pretty quick to print and install these parts. I used some PLA that I got with the machine as it's
-pretty hard waring.
+pretty hard wearing.
 
 ## Results
 I've tried printing a few items now and am still to find the best settings for PLA. Currently I am printing
