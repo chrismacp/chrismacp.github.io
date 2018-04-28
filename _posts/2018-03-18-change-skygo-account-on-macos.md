@@ -4,7 +4,7 @@ excerpt: "Instructions for switching user accounts in the Sky Go application on 
 date: 2018-03-31
 header:
   image: /assets/images/change-sky-go-account/header.jpg
-    caption: "Photo credit: [NASA](https://www.nasa.gov/sites/default/files/images/344198main_EC90-357-06_full.jpg)"
+  caption: "Photo credit: [NASA](https://www.nasa.gov/sites/default/files/images/344198main_EC90-357-06_full.jpg)"
   
 category:
  - technology
