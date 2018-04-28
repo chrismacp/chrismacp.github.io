@@ -16,7 +16,7 @@ tags:
  - tunnelblick
  - mac
 
-visible: 0
+published: false
 ---
 
 I recently moved overseas and decided to start using the VPN service on my [Netgear Nighthawk R7000][1]
