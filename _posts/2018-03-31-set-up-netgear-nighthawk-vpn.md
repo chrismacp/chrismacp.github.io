@@ -1,5 +1,6 @@
 ---
 title: "Setting up VPN on Netgear's Nighthawk Router"
+excerpt: "Instructions for setting up your own VPN on a Netgear Nighthawk router and connecting to it from MacOS"
 date: 2018-03-31
 header:
   image: /assets/images/neutron-collision.jpg
@@ -15,6 +16,7 @@ tags:
  - tunnelblick
  - mac
 
+visible: 0
 ---
 
 I recently moved overseas and decided to start using the VPN service on my [Netgear Nighthawk R7000][1]
