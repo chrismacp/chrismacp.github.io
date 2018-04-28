@@ -3,8 +3,8 @@ title: "Setting up VPN on Netgear's Nighthawk Router"
 excerpt: "Instructions for setting up your own VPN on a Netgear Nighthawk router and connecting to it from MacOS"
 date: 2018-03-31
 header:
-  image: /assets/images/neutron-collision.jpg
-  caption: "Photo credit: [NASA/JPL-Caltech](https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA21910)"
+  image: /assets/images/change-sky-go-account/header.jpg
+  caption: "Photo credit: [NASA](https://www.nasa.gov/sites/default/files/images/344198main_EC90-357-06_full.jpg)"
   
 category:
  - technology
