@@ -54,7 +54,7 @@ Applications directory.
    2. Scroll through the list or use the search feature to find a folder called "Application 
    Support" and inside of that you should find another directory with a name containing  "Sky Go 
    Player" which you should then right click and "Move to trash". There may be more than one, I 
-   deleted everything that was sky related this new app os the only thing that will be used now. 
+   deleted everything that was Sky related as I will only be using this new app going forward. 
    
 ## Delete the config that's left behind
 
