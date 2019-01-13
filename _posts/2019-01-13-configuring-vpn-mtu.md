@@ -137,8 +137,8 @@ We are using UDP protocol on our tunnel so we are going to use the mssfix option
 config file to reduce the packet size to fit within our MTU.
 
 The [manual][5] states:
-```
-–mssfix max
+
+>–mssfix max
 Announce to TCP sessions running over the tunnel that they should limit their send packet sizes 
 such that after OpenVPN has encapsulated them, the resulting UDP packet size that OpenVPN sends 
 to its peer will not exceed maxbytes. The default value is 1450.The max parameter is interpreted 
@@ -147,7 +147,7 @@ has been added in, but not including the UDP header itself. Resulting packet wou
 28 bytes larger for IPv4 and 48 bytes for IPv6 (20/40 bytes for IP header and 8 bytes for UDP 
 header). Default value of 1450 allows IPv4 packets to be transmitted over a link with MTU 1473 or 
 higher without IP level fragmentation. 
-```
+
 
 This suggests we need to take in to account the UDP header bytes. So 1470 - 28 (for IPv4) = 1442.
 
