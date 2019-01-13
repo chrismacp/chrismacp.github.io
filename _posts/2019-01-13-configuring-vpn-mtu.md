@@ -3,8 +3,8 @@ title: "VPN: Configuring the MTU setting"
 excerpt: "Misconfiguration of the MTU can cause problems and even stop it working so getting it right is important"
 date: 2019-01-13
 header:
-  image: /assets/images/jupiter-the-most-unknown.png
-  caption: "Photo credit: [NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill](https://photojournal.jpl.nasa.gov/catalog/PIA21984)"
+  image: /assets/images/configure-vpn-mtu/header.jpg
+  caption: "Photo credit: [CNSA](http://www.cnsa.gov.cn/n6758823/n6758844/n6760026/n6760035/c6805183/content.html)"
 toc: true
 category:
  - dev
@@ -32,8 +32,8 @@ I was seeing a few different things happening:
 MTU stands for [Maximum Transmission Unit][1] and can be thought of as the largest packet size 
 that can be sent from your computer over the network to it's destination. During the packet's 
 journey if it encounters a hop that can't process it's size then it will be [fragmented][2] 
-or dropped in which case an ICMP message "Destination Unreachable (Datagram Too Big)" will be 
-returned with the message. 
+or dropped - in which case an ICMP message "Destination Unreachable (Datagram Too Big)" will be 
+returned. 
  
 The MTU can be discovered via the 'Path MTU Discovery' technique. This involves sending out a packet
 with the DF (Don't Fragment) IP header set. This means that any hop that can't support the packet size
@@ -65,18 +65,19 @@ on your ISP and whether you are using IP4/IP6. Here is a table from wikipedia on
 ## Working out the MTU
 
 As described above we will perform a 'Path MTU Discovery' manually 
-(For more details on the technique check out [RFC1191 - IPv4][3], [RFC1981 - IPv6][4]). To do this we will use ping to
+(for more details on the technique check out [RFC1191 - IPv4][3], [RFC1981 - IPv6][4]). To do this we will use ping to
 send some packets out with the DF (Don't Fragment) option set and a fixed packet size. We will start
 from the Ethernet v2 standard (1500) from the table above as this should cover all ISPs, and reduce 
 the packet size by 10 until we get a successful response.
 
-Here is the command we will use (on MacOS - check your distro for how to set the DF option):
+Here is the command we will use (I'm using MacOS here - check your distro for how to set the DF 
+option):
 ```
 $ ping -D -v -s 1500 -c 1 google.com
 
 ```
 
-Here is how our process looked:
+Here is how our discovery went:
 ```
 ⇨ ping -D -v -s 1500 -c 1 google.com
 PING google.com (216.58.210.46): 1500 data bytes
@@ -117,15 +118,16 @@ successful though.
 
 The OpenVPN documentation states:
 
+```
 "MTU problems often manifest themselves as connections which hang during periods of active usage.
  
 It’s best to use the –fragment and/or –mssfix options to deal with MTU sizing issues."
- 
+``` 
 ... and ...
- 
+```
 "Both –fragment and –mssfix are designed to work around cases where Path MTU discovery is broken on 
 the network path between OpenVPN peers.
- 
+```
 The usual symptom of such a breakdown is an OpenVPN connection which successfully starts, but 
 then stalls during active usage."
 
@@ -133,6 +135,7 @@ We are using UDP protocol on our tunnel so we are going to use the mssfix option
 config file to reduce the packet size to fit within our MTU.
 
 The [manual][5] states:
+```
 –mssfix max
 Announce to TCP sessions running over the tunnel that they should limit their send packet sizes 
 such that after OpenVPN has encapsulated them, the resulting UDP packet size that OpenVPN sends 
@@ -142,13 +145,14 @@ has been added in, but not including the UDP header itself. Resulting packet wou
 28 bytes larger for IPv4 and 48 bytes for IPv6 (20/40 bytes for IP header and 8 bytes for UDP 
 header). Default value of 1450 allows IPv4 packets to be transmitted over a link with MTU 1473 or 
 higher without IP level fragmentation. 
+```
 
 This suggests we need to take in to account the UDP header bytes. So 1470 - 28 (for IPv4) = 1442.
 
 Incidentally I did check if the default setting for mssfix of 1450 which works with MTU of 1473
 pass our 'Path MTU Discovery'. It didn't. 
 
-So I've add ```--mssfix 1442``` to my OpenVPN config and it's working fine for the moment :)
+So I've added ```--mssfix 1442``` to my OpenVPN config and it's working fine for the moment :)
 
 
 
