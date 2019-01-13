@@ -64,7 +64,8 @@ on your ISP and whether you are using IP4/IP6. Here is a table from wikipedia on
 
 ## Working out the MTU
 
-As described above we will perform a 'Path MTU Discovery' manually. To do this we will use ping to
+As described above we will perform a 'Path MTU Discovery' manually 
+(For more details on the technique check out [RFC1191 - IPv4][3], [RFC1981 - IPv6][4]). To do this we will use ping to
 send some packets out with the DF (Don't Fragment) option set and a fixed packet size. We will start
 from the Ethernet v2 standard (1500) from the table above as this should cover all ISPs, and reduce 
 the packet size by 10 until we get a successful response.
@@ -131,7 +132,7 @@ then stalls during active usage."
 We are using UDP protocol on our tunnel so we are going to use the mssfix option in our OpenVPN 
 config file to reduce the packet size to fit within our MTU.
 
-The [manual][3] states:
+The [manual][5] states:
 –mssfix max
 Announce to TCP sessions running over the tunnel that they should limit their send packet sizes 
 such that after OpenVPN has encapsulated them, the resulting UDP packet size that OpenVPN sends 
@@ -158,4 +159,6 @@ Commons Attribution-Share-Alike License 3.0</a>.
 
 [1]: https://en.wikipedia.org/wiki/Maximum_transmission_unit
 [2]: https://en.wikipedia.org/wiki/IP_fragmentation
-[3]: https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/
+[3]: https://tools.ietf.org/html/rfc1191
+[4]: https://tools.ietf.org/html/rfc1981
+[5]: https://openvpn.net/community-resources/reference-manual-for-openvpn-2-4/
