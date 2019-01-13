@@ -6,6 +6,8 @@ header:
   image: /assets/images/configure-vpn-mtu/header.jpg
   caption: "Photo credit: [CNSA](http://www.cnsa.gov.cn/n6758823/n6758844/n6760026/n6760035/c6805183/content.html)"
 toc: true
+toc_label: "Quicklinks"
+toc_icon: "cog"
 category:
  - dev
 tags:
