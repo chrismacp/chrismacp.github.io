@@ -120,17 +120,17 @@ successful though.
 
 The OpenVPN documentation states:
 
-```
-"MTU problems often manifest themselves as connections which hang during periods of active usage.
+
+>"MTU problems often manifest themselves as connections which hang during periods of active usage.
+> 
+>It’s best to use the –fragment and/or –mssfix options to deal with MTU sizing issues."
  
-It’s best to use the –fragment and/or –mssfix options to deal with MTU sizing issues."
-``` 
 ... and ...
-```
-"Both –fragment and –mssfix are designed to work around cases where Path MTU discovery is broken on 
+
+>"Both –fragment and –mssfix are designed to work around cases where Path MTU discovery is broken on 
 the network path between OpenVPN peers.
-```
-The usual symptom of such a breakdown is an OpenVPN connection which successfully starts, but 
+>
+>The usual symptom of such a breakdown is an OpenVPN connection which successfully starts, but 
 then stalls during active usage."
 
 We are using UDP protocol on our tunnel so we are going to use the mssfix option in our OpenVPN 
