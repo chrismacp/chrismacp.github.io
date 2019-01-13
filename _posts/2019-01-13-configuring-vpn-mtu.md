@@ -22,14 +22,14 @@ new apartment. It took a little bit of investigation but I found the culprit to 
 setting. It turns out that misconfiguration of the MTU can cause problems and even stop requests 
 working so getting it right is important. 
 
-# Symptoms
+## Symptoms
 
 I was seeing a few different things happening:
 * Nothing loading over the internet at all
 * Just the page title loading
 * Really slow connection
 
-# What is an MTU?
+## What is an MTU?
 MTU stands for [Maximum Transmission Unit][1] and can be thought of as the largest packet size 
 that can be sent from your computer over the network to it's destination. During the packet's 
 journey if it encounters a hop that can't process it's size then it will be [fragmented][2] 
@@ -42,7 +42,7 @@ will have to return the ICMP message. The process is repeated until the smallest
 size is found. (See below for how we will do this manually).
  
 
-# Standard MTU sizes 
+## Standard MTU sizes 
 
 Different network protocols and layers can handle different MTUs so your mileage may vary depending 
 on your ISP and whether you are using IP4/IP6. Here is a table from wikipedia on the subject:
@@ -63,7 +63,7 @@ on your ISP and whether you are using IP4/IP6. Here is a table from wikipedia on
 | FDDI	                     | 4352                | |	
 
 
-# Working out the MTU
+## Working out the MTU
 
 As described above we will perform a 'Path MTU Discovery' manually 
 (for more details on the technique check out [RFC1191 - IPv4][3], [RFC1981 - IPv6][4]). To do this we will use ping to
@@ -115,7 +115,7 @@ So my MTU was 1470 after the last request was successful. You may have noticed t
 length' message ping gave me. This is due to Google sending back a small response. The request was
 successful though. 
 
-# OpenVPN Configuration
+## OpenVPN Configuration
 
 The OpenVPN documentation states:
 
