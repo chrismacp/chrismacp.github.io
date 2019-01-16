@@ -13,7 +13,7 @@ title                    : "chrismacpherson.net"
 title_separator          : "-"
 name                     : "Chris MacPherson"
 description              : "Blog - Software Engineering, Science, 3d Printing, Music"
-url                      : "http://chrismacpherson.net"
+url                      : "https://chrismacpherson.net"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chrismacp/chrismacp.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -106,7 +106,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          :
 
 
 # Reading Files
