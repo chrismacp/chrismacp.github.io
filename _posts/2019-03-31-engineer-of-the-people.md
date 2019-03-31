@@ -1,36 +1,26 @@
 ---
-title: "Finally Finished System Shock"
-date: 2019-01-16
+title: "Electronics: Engineer of the People"
+date: 2019-03-31
 header:
-  image: /assets/images/systemshock/header.png
-  caption: "Photo credit: [STEAM](https://store.steampowered.com/app/410710/System_Shock_Enhanced_Edition/)"
+  image: /assets/images/engineer-of-the-people/header.png
+  caption: "Photo credit: [Zachtronics](http://www.zachtronics.com/kohctpyktop-engineer-of-the-people/)"
 category:
- - games
+ - electronics
  
 tags:
- - "first-person"
- - retro
- - "sci-fi"
- - "pc"
+ - learning
+ - games
 ---
 
-[System Shock][1] the game, released in 1994 and much played by a then 14 year old has been cracked...finally.
+There hasn't been much time recently to keep up with my electronics learning. Finding a game that involved learning about the topic seemed like a good way to do this so I had a look on-line. I came across this interesting game '[Engineer of the People][1]' which presents some puzzles where you have to build some low level electronics.
 
-It's only taken me 25 years to finish it but the deed has been done. 
+It's quite old and the instructions don't work, but there is a video on Youtube where you can see them. It's also pretty difficult unless you know your stuff, which as beginner I don't. I also found some walk-through videos on Youtube too to help me get started and to reference when I get stuck.
 
-I remembered this game vividly from when I was that 14 year old. First-person shooters were relatively new and
-thin on the ground yet this had puzzles and a dark sci-fi world that sucked you in. Oh and the elevator music. 
+Anyway, I think it's great and very useful way of learning how to use things like NPN and PNP transistors to build gates, oscillators, latches nad more.
 
-I was excited when I saw it on STEAM after all this time and I have thoroughly enjoyed playing it again. I got
-hooked on some of the music from level 6 so much that I made a little track with it. It's still going round
-in my head like the magic roundabout (UK people will know what I mean).  
+{% include figure image_path="/assets/images/engineer-of-the-people/engineer-of-the-people-level5.png" alt="Building oscillators" caption="Building oscillators" %}
 
-As standard with my music, it's not finished and there's an abrubt end, maybe I'll get back to fixing that some time. 
-
-I'm off to play System Shock 2...
-
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/556554582&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-[1]: https://store.steampowered.com/app/410710/System_Shock_Enhanced_Edition/
+Have a go, or if you know any more apps like this please leave a comment :)
 
 
+[1]: http://www.zachtronics.com/kohctpyktop-engineer-of-the-people/
