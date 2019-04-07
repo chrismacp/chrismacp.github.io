@@ -50,12 +50,11 @@ Some things I would like, that I can't get right now:
 ## Football
 The selection of football is really good and I think all of the games that were available on SKY or BT Sports are also available here. That includes Premier League, EFL, FA Cup, Champions League, Nations Cup and more including divisions from other countries like Germany, Italy, France, Spain, Japan... 
 
-The only problem I see being a problem for a lot of British poeple is that you can't watch eveything in English. Premier League games fall in to that category unfortunately :( 
+The only thing I see being a problem for a lot of British people is that you can't watch eveything in English. Premier League games fall in to that category unfortunately :( 
 
 I have watched EFL games and Italian games in English, but an FA Cup game the other day was in German. I haven't figured out everything that is available in English yet but I'm hoping the Champions league game next week will be. For other sports, I've only checked out a British Rugby Union game so far and it was in English.
 
-
-Anyway to wrap up, I think this service is definitely worth a go and provides what it says on the tin. I think it could turn in to an amazing service if it keeps improving. With a free month it's really easy to check it out too. 
+Anyway to wrap up, I think this service is definitely worth a go and provides what it says on the tin. I think it could turn in to an amazing service if it keeps improving. With a free month it's really easy to test it out too. 
 
 Happy watching :)
 
