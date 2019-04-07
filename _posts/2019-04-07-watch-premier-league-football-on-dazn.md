@@ -16,7 +16,7 @@ tags:
 
 Last year my wife and I moved from the U.K. to Germany. I used to enjoy watching my fix of sport at home on Sky, with the Permier League the main attraction. So after all the migratory business was over I tried to figure out how to get access over here. You can get Sky here, but they don't show the Premier League games unfortunately so I've spent nights in pubs and tried to find other ways to watch.
 
-The other day I got a great recommendation from someone though. It's called [1][DAZN] and is a website subscription service with not only football but a whole host of sports. Think Sky Sports with no adverts and without the 100's of guff channels. 
+The other day I got a great recommendation from someone though. It's called [DAZN][1] and is a website subscription service with not only football but a whole host of sports. Think Sky Sports with no adverts and without the 100's of guff channels. 
 
 Funnily enough, as soon as he mentioned it, I actually started seeing posters in the train stations advertising the service so I thought I'd give it a try as it seemed a more established product than I was imagining. **Also the first month is free!!** 
 
