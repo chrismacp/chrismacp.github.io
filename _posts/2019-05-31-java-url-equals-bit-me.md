@@ -37,7 +37,7 @@ The problem was as follows.
 Although our system responded with a 2xx response whilst saving, when retrieving the image location again, it had not updated to the new version and still referenced example.com.
 
 ## Diagnosis
-Our code was pretty simple and we were pretty much just receiving the entity and validating it before then saving it. The image location was stored in a [URL][1] type field. No mutation of the data was going on and while debugging it I could see that we were sending the correct URL to the JPA Repository for storage. So it must be somewhere in JPA...nooooooo
+Our code was simple and we were just receiving the entity and validating it before then saving it. The image location was stored in a [URL][1] type field. No mutation of the data was going on and while debugging it I could see that we were sending the correct URL to the JPA Repository for storage. So it must be somewhere in JPA...nooooooo
 
 Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the ```URL.equals()``` method. 
 
