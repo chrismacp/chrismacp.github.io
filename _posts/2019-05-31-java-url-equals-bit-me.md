@@ -45,7 +45,7 @@ Essentially the ```URL.equals()``` method sees both URLs to be equal because the
 
 The docs for ```URL.equals``` say:
 ```
-Two URL objects are equal if they have the same protocol, <strong>reference equivalent hosts</strong>, have the same port number on the host, and the same file and fragment of the file.
+Two URL objects are equal if they have the same protocol, reference equivalent hosts, have the same port number on the host, and the same file and fragment of the file.
 
 Two hosts are considered equivalent if both host names can be resolved into the same IP addresses; else if either host name can't be resolved, the host names must be equal without regard to case; or both host names equal to null.
 ```
