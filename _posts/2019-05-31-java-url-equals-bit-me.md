@@ -55,11 +55,11 @@ So it resolves the hosts and compares the IPs! It does not matter that they are 
 Also it works differently if it can't resolve the hosts (think different environments)!
 
 ## Resolution
-Don't use URL.
+- Don't use URL.
 
-You could use [URI][2] instead which compares object in more expected fashion. This doesn't work quite as well with JPA/Hibernate though so I needed to introduce a simple [type converter][3] which stores it as a String in the database. 
+- You could use [URI][2] instead which compares the objects in a more expected fashion. URI doesn't work quite as well with JPA/Hibernate though so I needed to introduce a simple [type converter][3] which stores it as a String in the database. 
 
-Just use a String instead and keep it really simple, with a little bit more work for validation etc.
+- Just use a String instead and keep it really simple, with a little bit more work for validation etc.
 
 
 
