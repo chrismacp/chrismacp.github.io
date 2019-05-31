@@ -2,8 +2,9 @@
 title: "Java URL Equals Bit Me"
 date: 2019-05-31
 header:
-  image: /assets/images/java-black-hole-bit-me.jpg
-  caption: "Photo credit: NASA/ESA"
+  image: /assets/images/java-equals-bit-me/black-hole.png
+  image_description: "Congrats to all parties involved in creating the first ever picture of a black hole"
+  caption: "Photo credit: Event Horizon Telescope Collaboration"
 category:
  - dev
 tags:
@@ -19,7 +20,7 @@ that I had ever worked on.
 ## Problem
 The problem was as follows.
 
-1. The customer stores the location for an online image, say:
+1. Using our UI, the customer stores the location for an online image, say:
 ```www.example.com/my-image.jpg```
 
 2. The customer then later gets a new domain and updates the image location to:
@@ -27,12 +28,12 @@ The problem was as follows.
 
 3. The customer didn't change servers or anything else, just the domain name.
 
-Although our system responded with a 2xx response whilst saving, when retrieving the image location it had not updated to the new version and still referenced example.com.
+Although our system responded with a 2xx response whilst saving, when retrieving the image location again, it had not updated to the new version and still referenced example.com.
 
 ## Diagnosis
 Our code was pretty simple and we were pretty much just receiving the entity and validating it before then saving it. The image location was stored in a [URL][1] type field. No mutation of the data was going on and while debugging it I could see that we were sending the correct URL to the JPA Repository for storage. So it must be somewhere in JPA...nooooooo
 
-Luckily, with a little help, it didn't take too long to work out what was happening and it all boiled down to the URL.equals() method. 
+Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the URL.equals() method. 
 
 Essentially the URL.equals() method sees both URLs to be equal because the domains point to the same IP and the other parts are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
 
