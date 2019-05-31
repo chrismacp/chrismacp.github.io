@@ -37,9 +37,9 @@ Our code was pretty simple and we were pretty much just receiving the entity and
 
 Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the URL.equals() method. 
 
-Essentially the URL.equals() method sees both URLs to be equal because the domains point to the same IP and the other parts are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
+Essentially the ```URL.equals()``` method sees both URLs to be equal because the domains point to the same IP and the other parts are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
 
-The docs for URL.equals say:
+The docs for ```URL.equals``` say:
 ```
 Two URL objects are equal if they have the same protocol, <strong>reference equivalent hosts</strong>, have the same port number on the host, and the same file and fragment of the file.
 
@@ -53,7 +53,7 @@ Also it works differently if it can't resolve the hosts (think different environ
 ## Resolution
 Don't use URL.
 
-You could use URI instead which compares object in more expected fashion. This doesn't work quite as well with JPA/Hibernate though so I needed to introduce a simple [type converter][3] which stores it as a String in the database. 
+You could use [URI][2] instead which compares object in more expected fashion. This doesn't work quite as well with JPA/Hibernate though so I needed to introduce a simple [type converter][3] which stores it as a String in the database. 
 
 Just use a String instead and keep it really simple, with a little bit more work for validation etc.
 
