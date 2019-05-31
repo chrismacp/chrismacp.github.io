@@ -41,7 +41,7 @@ Our code was simple and we were just receiving the entity and validating it befo
 
 Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the ```URL.equals()``` method. 
 
-Essentially the ```URL.equals()``` method sees both URLs to be equal because the domains point to the same IP and the other parts are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
+Essentially the ```URL.equals()``` method sees both URLs to be equal because the hosts resolve to the same IP and the other parts of the URL are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
 
 The docs for ```URL.equals``` say:
 ```
