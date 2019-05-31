@@ -39,7 +39,7 @@ Although our system responded with a 2xx response whilst saving, when retrieving
 ## Diagnosis
 Our code was pretty simple and we were pretty much just receiving the entity and validating it before then saving it. The image location was stored in a [URL][1] type field. No mutation of the data was going on and while debugging it I could see that we were sending the correct URL to the JPA Repository for storage. So it must be somewhere in JPA...nooooooo
 
-Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the URL.equals() method. 
+Luckily, with a little help, it didn't take toooo long to work out what was happening and it all boiled down to the ```URL.equals()``` method. 
 
 Essentially the ```URL.equals()``` method sees both URLs to be equal because the domains point to the same IP and the other parts are the same. It reports that during the dirty checking process so JPA thinks the URL hasn't changed and doesn't save it.
 
