@@ -22,11 +22,11 @@ The problem was as follows.
 
 1. Using our UI, the customer stores the location for an online image, say:
    
-```www.example.com/my-image.jpg```
+`www.example.com/my-image.jpg`
 
 2. The customer then later gets a new domain and updates the image location to:
 
-```www.something-else.com/my-image.jpg```
+    www.something-else.com/my-image.jpg
 
 3. The customer didn't change servers or anything else, just the domain name.
 
