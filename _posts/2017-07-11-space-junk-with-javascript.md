@@ -5,6 +5,7 @@ header:
   image: /assets/images/space-junk-header.jpg
   caption: "Photo credit: [N.A.S.A.](https://www.orbitaldebris.jsc.nasa.gov/photo-gallery.html)"
 category:
+ - space
  - science
  - dev
  

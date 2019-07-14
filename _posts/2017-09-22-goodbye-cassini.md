@@ -5,6 +5,7 @@ header:
   image: /assets/images/enceladus.jpg
   caption: "Photo credit: NASA/JPL/Space Science Institute"
 category:
+ - space
  - science
  
 tags:

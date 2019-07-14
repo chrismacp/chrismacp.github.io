@@ -4,7 +4,8 @@ date: 2017-03-29
 header:
   image: /assets/images/planet-nine-background.png
 category:
-  science
+ - space
+ - science
 tags:
  - planet9
  - space
