@@ -2,7 +2,7 @@
 title: "50 Years Since We Walked on the Moon"
 date: 2019-07-14
 header:
-  image: /assets/images/50-years-since-we-walked-on-the-moon/header.png
+  image: /assets/images/50-years-since-we-walked-on-the-moon/header.jpg
   image_description: "Buzz Aldrin on the Moon, taken by Neil Armstrong who can be seen in the visor reflection"
   caption: "Photo credit: N.A.S.A"
 category:
@@ -17,7 +17,9 @@ tags:
 
 ---
 
-The 50th anniversary of one our civilisation's greatest achievements is only days away. Neil Armstrong and Buzz Aldrin took our first ever steps on a body other than the earth by stepping onto the Moon's surface in the Sea of Tranquillity on the 21th of July 1969 at 02:56:15 UTC, while Michael Collins remained in Moon orbit overhead.
+The 50th anniversary of one our civilisation's greatest achievements is only days away. Neil Armstrong and Buzz Aldrin took our first ever steps on a body other than the Earth by stepping onto the Moon's surface in the Sea of Tranquillity on the 21th of July 1969 at 02:56:15 UTC, while Michael Collins remained in Moon orbit overhead.
+
+{% include figure image_path="/assets/images/50-years-since-we-walked-on-the-moon/apollo_11_insignia.png" alt="Apollo 11 Mission Patch" caption="Apollo 11 Mission Patch" %}
 
 There are obviously plenty of resources about this monumental event but as it's a major anniversary some new stuff has popped up which I have been enjoying.
 
