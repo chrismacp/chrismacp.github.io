@@ -24,7 +24,7 @@ First of all though, here is how I progressed in this area before now...
 
 At first, all that I knew about was the '[expected][3]' parameter of JUnit's @Test annotation. This allows you to specify the exception class you expect will be thrown and if that indeed occurs during test execution then the test will pass.
 
-```
+```java
 @Test(expected = MyException.class)
 public void throwsAnExceptionWhenTryingToCalculateWithNull() throws MyException {
     testSubject.calculate(null)
@@ -37,7 +37,7 @@ The above is actually quite clear to read to be honest, but it doesn't allow you
 
 My code next migrated to a better JUnit feature which allows you to make some assertions against a captured exception. Being able to check the message and other properties of the object was a massive gain, you just have to add a small bit of plubming with the [@Rule][4].
 
-```
+```java
 @Rule
 public ExpectedException thrown = ExpectedException.none();
 
@@ -60,7 +60,7 @@ Of course it can...
 
 AssertJ added a new [exception assertion][5] that allows us to test the exception and its message and properties as before but also in a BDD style 'Given, When, Then' pattern. We can also get rid of the plumbing too which is nice, **I find it very distracting to have to scroll up to the top of the class to reference class members** (or even worse for private members being used to prevent 'magic-numbers').
 
-```
+```java
 @Test
 public void throwsAnExceptionWhenTryingToCalculateWithNull() {
 
