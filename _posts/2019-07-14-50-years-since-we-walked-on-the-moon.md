@@ -26,15 +26,19 @@ There are obviously plenty of resources about this monumental event but as it's 
 Here's what I have come across so far, if you find something else drop us a comment!
 
 [BBC - 8 Days: To the Moon and Back][1]
-Documentary with no narration but just real footage and recreation.
+
+Documentary with no narration, just real footage and recreated scenes.
 
 [BBC - 13 Minutes to the Moon][2]
-8 episode podcast focussing on how the Moon landing was saved.
+
+Well produced 8 episode podcast presented by Kevin Fong focussing on how the Moon landing was saved.
 
 [Apollo 11 In Realtime][3]
+
 Amazing website recreating the Apollo 11 experience from the cockpit with visualisations, transcriptions and all mission data presented in real-time. A lot of work has gone in to this!
 
 [Apollo 11][4]
+
 Recent film which I've still to watch but has decent ratings. It's in the cinemas in the U.K. and Germany right now. 
 
 
