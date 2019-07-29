@@ -20,7 +20,7 @@ Exceptions haven't always been the easiest things to test properly in Java, and 
 
 First of all though, here is how I progressed in this area before now...
 
-## JUnit 'expected' annotation parameter
+## JUnit 'expected' Annotation Parameter
 
 At first, all that I knew about was the '[expected][3]' parameter of JUnit's @Test annotation. This allows you to specify the exception class you expect will be thrown and if that indeed occurs during test execution then the test will pass.
 
