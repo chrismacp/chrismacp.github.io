@@ -35,7 +35,7 @@ The above is actually quite clear to read to be honest, but it doesn't allow you
 
 ## JUnit ExpectedException Rule
 
-My code next migrated to a better JUnit feature which allows you to make some assertions against a captured exception. Being able to check the message and other properties of the object was a massive gain, you just have to add a small bit of plubming with the [@Rule][4].
+My code next migrated to a better JUnit feature which allows you to make some assertions against a captured exception. Being able to check the message and other properties of the object was a massive gain, you just have to add a small bit of plumbing with the [@Rule][4].
 
 ```java
 @Rule
