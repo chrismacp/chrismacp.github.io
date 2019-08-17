@@ -14,7 +14,8 @@ tags:
  - berlin
 ---
 
-**UPDATE** - DAZN lost the rights to show Premier League football in Germany for the next three seasons (starting 2019-2020) so this article is not accurate any more :( {: .notice--warning}
+**UPDATE** - DAZN lost the rights to show Premier League football in Germany for the next three seasons (starting 2019-2020) so this article is not accurate any more :(
+{: .notice--warning}
  
 
 Last year my wife and I moved from the U.K. to Germany. I used to enjoy watching my fix of sport at home on Sky, with the Permier League the main attraction. So after all the migratory business was over I tried to figure out how to get access over here. You can get Sky here, but they don't show the Premier League games unfortunately so I've spent nights in pubs and tried to find other ways to watch.
