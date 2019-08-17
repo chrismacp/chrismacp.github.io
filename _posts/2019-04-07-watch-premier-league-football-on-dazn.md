@@ -14,7 +14,7 @@ tags:
  - berlin
 ---
 
-**UPDATE** - DAZN lost the rights to show Premier League football in Germany for the next three seasons (starting 2019-2020) so this article is not accurate any more :(
+*UPDATE*{: style="font-weight: bold"} - DAZN lost the rights to show Premier League football in Germany for the next three seasons (starting 2019-2020) so this article is not accurate any more :(
 {: .notice--warning}
  
 
