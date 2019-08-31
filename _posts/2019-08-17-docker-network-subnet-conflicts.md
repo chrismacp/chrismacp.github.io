@@ -3,7 +3,7 @@ title: "Docker Network Subnet Conflicts"
 date: 2019-08-17
 excerpt: "Scientists just discovered how to 'grow' tooth enamel!"
 header:
-  image: /assets/images/docker-network-subnet-conflicts/header.jpg
+  overlay-image: /assets/images/docker-network-subnet-conflicts/header.jpg
   image_description: "Scientists just discovered how to 'grow' tooth enamel!"
   caption: "Zhejiang University/Science Advances"
   actions:
