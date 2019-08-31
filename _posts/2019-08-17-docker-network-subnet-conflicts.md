@@ -7,7 +7,7 @@ header:
   caption: "Zhejiang University/Science Advances"
   actions:
     - label: "Check that out"
-      url: "https://www.theguardian.com/science/2019/aug/30/scientists-grow-tooth-enamel"
+      url: "/aug/30/scientists-grow-tooth-enamel"
 category:
  - dev
 tags:
