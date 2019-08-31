@@ -6,8 +6,8 @@ header:
   overlay_image: /assets/images/docker-network-subnet-conflicts/header.jpg
   caption: "Zhejiang University/Science Advances"
   actions:
-    - label: "Check that out"
-      url: "/aug/30/scientists-grow-tooth-enamel"
+   - label: "Check that out"
+     url: "/aug/30/scientists-grow-tooth-enamel"
 category:
  - dev
 tags:
