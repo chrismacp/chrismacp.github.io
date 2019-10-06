@@ -14,7 +14,7 @@ tags:
 
 ---
 
-Quite often at work I'm banging on about code being easy to read. It's a well understood notion that [it's harder to read code than to write it][1] so I'm always keen to keep things as ledgable as possible, especially in my tests which I hope provide backup documentation.
+Quite often at work I'm banging on about code being easy to read. It's a well understood notion that [it's harder to read code than to write it][1] so I'm always keen to keep things as legible as possible, especially in my tests which I hope provide backup documentation.
 
 Exceptions haven't always been the easiest things to test properly in Java, and by test I am including the exception message and structure as well as the type, but I recently started using a new feature of [AssertJ][2] which I think helps keep the flow of the tests smooth.
 
@@ -31,7 +31,7 @@ public void throwsAnExceptionWhenTryingToCalculateWithNull() throws MyException 
 }
 ```
 
-The above is actually quite clear to read to be honest, but it doesn't allow you to check any of the details of the excpetion itself, only that it was thrown.
+The above is actually quite clear to read to be honest, but it doesn't allow you to check any of the details of the exception itself, only that it was thrown.
 
 ## JUnit ExpectedException Rule
 
