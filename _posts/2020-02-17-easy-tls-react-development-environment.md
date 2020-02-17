@@ -19,9 +19,9 @@ tags:
 
 
 
-If you are serious about security, everything should be running over TLS for obvious reasons. Running a development environment with TLS enabled so you can run 'like Production' should also be the norm and thankfully it's easy to set up in a Create-React-App (CRA) based project with minimal effort.
+If you are serious about security then everything should be running over TLS for obvious reasons. Running a development environment with TLS enabled so you can run 'like Production' should also be the norm and thankfully it's easy to set up in a Create-React-App (CRA) based project with minimal effort.
 
-I don't do this normally myself as, and I'm sure most people would probably agree, it sounds like unneeded hassle that slows development down. However, I've recently been integrating Auth0 into a small CRA project and discovered that [consent flows doesn't work fully using the host name 'localhost'][1]. You can use a custom host name instead by adding an entry in /etc/hosts but even this doesn't solve the situation if you aren't also using HTTPS/TLS. So setting up TLS on dev it is then...
+I don't do this on small projects normally myself as, and I'm sure most people would probably agree, it sounds like unneeded hassle that slows development down. However, I've recently been integrating Auth0 into a small CRA project and discovered that [consent flows doesn't work fully using the host name 'localhost'][1]. You can use a custom host name instead by adding an entry in /etc/hosts but even this doesn't solve the situation if you aren't also using HTTPS/TLS. So setting up TLS on dev it is then...
 
 
 ## Agenda
