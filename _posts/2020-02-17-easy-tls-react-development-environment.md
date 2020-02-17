@@ -1,13 +1,11 @@
 ---
 title: "Easy TLS React Development Environment"
 date: 2020-02-17
-excerpt: "Elsewhere: Scientists just discovered how to 'grow' tooth enamel!"
+excerpt: "Configure TLS for your CRA project and node Express backend services in no time at all."
 header:
-  overlay_image: /assets/images/docker-network-subnet-conflicts/header.jpg
-  caption: "Zhejiang University/Science Advances"
-  actions:
-   - label: "Check that out"
-     url: "https://www.theguardian.com/science/2019/aug/30/scientists-grow-tooth-enamel"
+  image: /assets/images/easy-tls-react-development-environment/header.jpg
+  image_description: "The Changing Surface of Fading Betelgeuse"
+  caption: "Photo credit: ESO, M. Montargès et al."
 category:
  - dev
 tags:
