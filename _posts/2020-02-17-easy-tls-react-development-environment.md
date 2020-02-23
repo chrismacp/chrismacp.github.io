@@ -92,7 +92,7 @@ I made a new command in my `package.json` which switches out the self-signed cer
 ```js
 "configure-certs": "rm -f ./node_modules/webpack-dev-server/ssl/server.pem && cp -f ../../auth/tls-certs/mydomain.com/chain.pem ./node_modules/webpack-dev-server/ssl/server.pem",
 ```
-You should only need to run this once (`$ yarn configure-certs`) but I figure I'll use this in all projects now so I can just use this command to set up the cert when I need it.
+You need to run `$ yarn configure-certs` after every install you perform as the cert gets replaced.
 
 After doing the above (and restarting your CRA project) you should be able to view your site with TLS enabled by visiting: `https://mydomain.com:3000`. Your browser should show the lock symbol confirming the signed certificate is trusted (if not then you probably need tell your OS to trust the root CA cert, see above). 
 
