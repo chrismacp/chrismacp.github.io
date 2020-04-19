@@ -18,7 +18,7 @@ tags:
 
 ---
 
-I streamed a few DJ sets over the last few weeks with a bunch of friends as part of 'covidcore', an online get-together while we're all in isolation. It's been a while since I've played any DJ sets but it was great fun and I didn't make too many mistakes.
+I streamed a few DJ sets over the last few weeks with a bunch of friends as part of 'covidcore', an online get-together while we're all in isolation. It's been a while since I've played any DJ sets but it was great fun and thankfully I didn't make too many mistakes.
 
 Anyway, It was my first streaming experience and I found it a breeze to set up thanks to [Twitch][1] and [OBS][2]. When reviewing my recordings I noticed that my microphone level was pretty low so I decided to bust out the audio track from the video and raise it. Also when uploading my video to Youtube I also got a copyright notice about one the clips in my video which was subsequently being blocked, so I decided to edit that out too.
 
@@ -27,7 +27,8 @@ Here is how you can do it.
 
 Note: I'm on a mac so all of the instructions are for that, but apart from installation the rest should be platform agnostic.
 
-## Steps
+## Steps
+
 
 * Install [mkvtoolnix][3]
 * Extract audio and video tracks from mkv file
@@ -60,7 +61,7 @@ mkvinfo your-mkv-file.mkv
 
 Might be good to [reference the docs][4] if you have trouble there.
 
-## Optionally convert audio track if editing needed
+## Optionally convert audio track if editing needed
 
 My audio editor couldn't open the aac file I created so I converted it to FLAC format using [ffmpeg][5], another command line program that is insanely useful for converting audio formats (amongst other things).
 
@@ -71,7 +72,7 @@ ffmpeg -i audio.aac  -c:a flac audio.flac
 
 Now I can open my flac file and edit the parts I want, like amplifying my microphone in the recording. 
 
-## Merge audio and video tracks back in to mkv file
+## Merge audio and video tracks back in to mkv file
 
 Right, now you have completed your editing we can stitch them back together again using the [mkvmerge][6] command
 
