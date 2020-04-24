@@ -86,9 +86,9 @@ Hope that helps someone :)
 
 
 
-[1]:[https://www.twitch.tv/]
-[2]:[https://obsproject.com/]
-[3]:[https://mkvtoolnix.download]
-[4]:[https://mkvtoolnix.download/doc/mkvextract.html]
-[5]:[http://ffmpeg.org/documentation.html]
-[6]:[https://mkvtoolnix.download/doc/mkvmerge.html]
+[1]: https://www.twitch.tv/
+[2]: https://obsproject.com/
+[3]: https://mkvtoolnix.download
+[4]: https://mkvtoolnix.download/doc/mkvextract.html
+[5]: http://ffmpeg.org/documentation.html
+[6]: https://mkvtoolnix.download/doc/mkvmerge.html
