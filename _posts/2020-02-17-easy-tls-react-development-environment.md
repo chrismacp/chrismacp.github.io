@@ -26,6 +26,7 @@ I don't do this on small projects normally myself as, and I'm sure most people w
 
 ## Agenda
 
+* Set up domain to resolve to localhost
 * Generate TLS certificates
 * Configure CRA project
 * Configure Node (Express) services
@@ -49,8 +50,16 @@ My project file structure has a simple layout:
     package.json
 ```
 
-## Generate TLS Certificates
+## Set up domain to resolve to localhost
+First thing to do is ensure you can resolve your domain name locally for local dev work.
+This means adding it to the `/etc/hosts` file as you see below (for mac or linux).
 
+```sh
+127.0.0.1       localhost mydomain.com
+```
+That should mean that when you enter mydomain.com in your browser it resolves to 127.0.0.1 - your machine.
+
+## Generate TLS Certificates
 Using self-signed certs is not an option as it causes more problems so we're going to create our own Certificate Authority (CA) and use it to sign our certs.
 Luckily there any many more tools for doing this than there used to be, I found one called [Minica][2] which does all the hard graft for us. 
 
@@ -130,6 +139,18 @@ const server = https.createServer(httpsOptions, app);
 You basically just create a server using the `https` module and pass it the cert and key files as options. Bam.
 
 Hopefully now you have both front and back-ends running with some sweet TLS love.
+
+
+## Troubleshooting
+
+If you see this error when you start your app:
+
+```sh
+$ react-scripts start
+Attempting to bind to HOST environment variable: mydomain.com
+```
+
+...then you need to configure your domain to resolve locally. Follow the first step above "Set up domain to resolve to localhost"
 
 
 [1]: https://community.auth0.com/t/how-do-i-skip-the-consent-page-for-my-api-authorization-flow/6035/2
