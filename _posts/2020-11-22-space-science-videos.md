@@ -25,6 +25,7 @@ There are so many great space science videos out there so I'm starting a list to
 
 ## Planets / Moons
 [Wonders of the Solar System - BBC][3]
+
 [Exploring the outer Solar System: now in vivid colour - Michele Bannister - SETI Talk - 2016][8]
 
 ### Pluto
@@ -35,10 +36,11 @@ There are so many great space science videos out there so I'm starting a list to
 
 ### Exo-Planets
 [Kepler: The Era of Exoplanets Has Arrived - Jeff Coughlin & Geert Barentsen - SETI Talk - 2017 (ignore first 10 minutes)][7]
+
 [Planets Everywhere: The 7th Kepler Planet Catalog - Fergal Mullally - SETI Talk - 2015)][9]
 
 ## Stars / Universe
-[Wonders of the Universe - BBC][4]
+[Wonders of the Universe - BBC][4]<br />
 [Hubble - 15 years of discovery - ESA][6]
 
 ## General Science
