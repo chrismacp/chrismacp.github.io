@@ -24,27 +24,25 @@ There are so many great space science videos out there so I'm starting a list to
 
 
 ## Planets / Moons
-[Wonders of the Solar System - BBC][3]
-
-[Exploring the outer Solar System: now in vivid colour - Michele Bannister - SETI Talk - 2016][8]
+[Wonders of the Solar System - BBC][3]<br />
+[Exploring the outer Solar System: now in vivid colour - SETI Talk - 2016][8]<br />
 
 ### Pluto
-[The Year of Pluto - New Horizons Documentary Brings Humanity Closer to the Edge of the Solar System - NASA][2]
+[The Year of Pluto - New Horizons Documentary - NASA][2]<br />
 
 ### Europa
-[Exploring Europa - Ocean Worlds of the Outer Solar System - NASA][1]
+[Exploring Europa - Ocean Worlds of the Outer Solar System - NASA][1]<br />
 
 ### Exo-Planets
-[Kepler: The Era of Exoplanets Has Arrived - Jeff Coughlin & Geert Barentsen - SETI Talk - 2017 (ignore first 10 minutes)][7]
-
-[Planets Everywhere: The 7th Kepler Planet Catalog - Fergal Mullally - SETI Talk - 2015)][9]
+[Kepler: The Era of Exoplanets Has Arrived - SETI Talk - 2017 (ignore first 10 minutes)][7]<br />
+[Planets Everywhere: The 7th Kepler Planet Catalog - SETI Talk - 2015)][9]<br />
 
 ## Stars / Universe
 [Wonders of the Universe - BBC][4]<br />
-[Hubble - 15 years of discovery - ESA][6]
+[Hubble - 15 years of discovery - ESA][6]<br />
 
 ## General Science
-[Neil Turok Public Lecture: The Astonishing Simplicity of Everything - Perimeter Institute][5]
+[Neil Turok Public Lecture: The Astonishing Simplicity of Everything - Perimeter Institute][5]<br />
 
 
 
