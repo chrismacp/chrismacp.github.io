@@ -3,9 +3,9 @@ title: "Great Space Science Videos"
 date: 2020-11-22
 excerpt: "A list of my favourite videos on science, the planets, stars and all things out there"
 header:
-  image: /assets/images/extract-audio-or-video-from-mkv/header.png
-  image_description: "Covid 19 virus affecting us all"
-  caption: "Photo credit: www.ecdc.europa.eu/en/covid-19"
+  image: /assets/images/space-science-videos/header.png
+  image_description: "The Antennae Galaxies in Collision"
+  caption: "Photo credit: ESA/Hubble NASA"
 category:
  - space
  - science
