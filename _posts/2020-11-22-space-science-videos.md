@@ -9,6 +9,7 @@ header:
 category:
  - space
  - science
+ - video
 tags:
  - earth
  - moon
