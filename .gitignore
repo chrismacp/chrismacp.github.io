@@ -17,4 +17,4 @@ npm-debug.log*
 .env
 content
 public
-.code-workspace
+blog.code-workspace
