@@ -3,7 +3,7 @@ title: "Syncing studios remotely with RTPMIDI and Jamulus"
 date: 2020-12-03
 excerpt: "Want to jam with your friends remotely but still in sync! What was once a distant dream now seems to be fairly easy thanks to some great free tools."
 header:
-  image: /assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/header.png
+  image: /assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/header.jpg
   image_description: "MIDI MIDI MIDI MIDI"
 category:
  - music
@@ -12,7 +12,6 @@ tags:
  - rtpmidi
  - jamulus
  - ableton
-
 ---
 
 Although it's been majorly shite for a year, there have been some silver linings to come out of 2020. One of these has been a return to DJing with friends via Twitch and subsequently our new home [hearthis.at/covidcore][1].
