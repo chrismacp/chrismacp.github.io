@@ -3,7 +3,7 @@ title: "Great Space Science Videos"
 date: 2020-11-22
 excerpt: "A list of my favourite videos on science, the planets, stars and all things out there"
 header:
-  image: /assets/images/space-science-videos/header.png
+  image: /assets/images/space-science-videos/header.jpg
   image_description: "The Antennae Galaxies in Collision"
   caption: "Photo credit: ESA/Hubble NASA"
 category:

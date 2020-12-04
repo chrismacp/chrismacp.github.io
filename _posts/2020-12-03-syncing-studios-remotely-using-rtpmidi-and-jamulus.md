@@ -73,7 +73,7 @@ Both Ableton and Jamulus need to access your sound card and this can be a proble
 
 * Start Jamulus
 * Open settings
-* Configure the input (where you audio goes IN to you soundcard)
+* Configure the input (where your audio goes IN to you soundcard)
 * Configure the output (where the merged audio comes OUT of your soundcard and to your speakers)
 * Connect to a server (you can connect to your own private server too)
 * Make sure you don't use WIFI!
