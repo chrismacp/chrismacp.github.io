@@ -40,16 +40,18 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
 
 ** Important - you need ethernet connections to get this working well so don't expect much if you use WIFI. I forgot about this during one session and the audio was pretty bad so I can confirm it's not worth trying. **
 
-1. Download Jamulus and if you are not on a mac then get RTPMIDI too
+### Step 1
+Download Jamulus and if you are not on a mac then get RTPMIDI too
 
 
-1. You need to enable port forwarding on your router to allow RTPMIDI to work. Use the default port 5004(UDP) and forward it to the machine where your music will be captured.
+### Step 2
+You need to enable port forwarding on your router to allow RTPMIDI to work. Use the default port 5004(UDP) and forward it to the machine where your music will be captured.
 
 
 1. If you are going to run your own Jamulus Server then you also need to open a port for that too. I ran it on a separate computer, doesn't need a sound card or to be hardcore or anything. See [the instructions][4], but essentially you just open the programme and that's it! 
 
 
-1. RTPMIDI
+2. RTPMIDI
    
    {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/rtpmidi-setup.jpg" alt="Configure RTPMIDI session" caption="Configure RTPMIDI session" %}
 
@@ -60,10 +62,10 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
    * On Mac at least, the session always seems to have the participant from the last session in there, so just clear it out and start fresh every time. Likely your IPs will have changed anyway so you'll need to update the directory users anyway. 
    
 
-2. Windows only - Both Ableton and Jamulus need to access your sound card and this can be a problem for certain drivers. So our advice is to open up Ableton first using an ASIO driver and then Jamulus using directX or whatever else. On Macs this is not a problem, not sure about Linux as we are not using that this time. 
+3. Windows only - Both Ableton and Jamulus need to access your sound card and this can be a problem for certain drivers. So our advice is to open up Ableton first using an ASIO driver and then Jamulus using directX or whatever else. On Macs this is not a problem, not sure about Linux as we are not using that this time. 
     
 
-3. Start Jamulus (client not server)
+4. Start Jamulus (client not server)
    
    {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/jamulus-config.jpg" alt="Configure Jamulus settings" caption="Configure Jamulus settings" %}
 
@@ -76,7 +78,7 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
    * We used high quality sound, stereo with auto jitter control
   
 
-4. Ableton Live
+5. Ableton Live
    * Person who is 'master' switches on RTPMIDI output sync
       {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-output.jpg" alt="Master sets output sync on" caption="Master sets output sync on" %}
 
@@ -88,7 +90,7 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
    * Make sure when the master starts Live, that the remote Live is triggered
    * Play some 4x4 kicks on each end and adjust rtpmidi midi latency - works from both ends, but might be more sane if only one person is adjusting it
 
-5. Jam it up, have fun. If you are running Jamulus Server then you can also enable auto-recording which is really cool. Jamulus will save each session with each participants audio in a separate WAV file for each of their connections. It will also create a '.lof' file for Audacity, and a '.rpp' for Reaper which means all the WAV files will be arranged in the respective audio programme just like the session took place. Check the image below to see what I mean - awesome stuff Jamulus - you rock! Please support these people as this tool is great :)
+6. Jam it up, have fun. If you are running Jamulus Server then you can also enable auto-recording which is really cool. Jamulus will save each session with each participants audio in a separate WAV file for each of their connections. It will also create a '.lof' file for Audacity, and a '.rpp' for Reaper which means all the WAV files will be arranged in the respective audio programme just like the session took place. Check the image below to see what I mean - awesome stuff Jamulus - you rock! Please support these people as this tool is great :)
 {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/audacity.png" alt="Session recordings organised by particpant connection - labelled with IP" caption="Session recordings organised by particpant connection - labelled with IP" %}
    
 ## Go Check it out!
