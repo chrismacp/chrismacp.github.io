@@ -37,6 +37,7 @@ There are so many great space science videos out there so I'm starting a list to
 ### Exo-Planets
 [Kepler: The Era of Exoplanets Has Arrived - SETI Talk - 2017 (ignore first 10 minutes)][7]<br />
 [Planets Everywhere: The 7th Kepler Planet Catalog - SETI Talk - 2015)][9]<br />
+[Search for Second Earth - ABC - 2018][10]
 
 ## Stars / Universe
 [Wonders of the Universe - BBC][4]<br />
@@ -44,6 +45,7 @@ There are so many great space science videos out there so I'm starting a list to
 
 ## General Science
 [Neil Turok Public Lecture: The Astonishing Simplicity of Everything - Perimeter Institute][5]<br />
+[The Story of Information, Order and Disorder - BBC - 2012][11]
 
 
 
@@ -57,3 +59,5 @@ There are so many great space science videos out there so I'm starting a list to
 [7]: https://www.youtube.com/watch?v=y2bDaD7IlC4&list=LL&index=40
 [8]: https://www.youtube.com/watch?v=_w9N6yABAW4
 [9]: https://www.youtube.com/watch?v=FSHYpN4Zej8
+[10]: https://www.youtube.com/watch?v=cL2O-MyvtPs
+[11]: https://www.youtube.com/watch?v=qj7HH0PCqIE
