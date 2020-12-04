@@ -46,11 +46,11 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
 
 1. RTPMIDI
    {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/rtpmidi-setup.jpg" alt="Configure RTPMIDI session" caption="Configure RTPMIDI session" %}
-   - Add all other participants in to your local directory (in the RTPMIDI interface), you'll need to know their IP address and they'll need to know yours - just look at [whatismyipaddress.com][3] in a browser and switch off VPNs first.
-   - Restrict the session to 'Only computers in my Directory' to ensure that only your friends can connect via the RTPMIDI port through your router to your machine. 
-   - One person creates a session and the other person tries to join it. 
-   - Make sure you can see the other person in your participants list
-   - On Mac at least, the session always seems to have the participant from the last session in there, so just clear it out and start fresh every time. Likely your IPs will have changed anyway so you'll need to update the directory users anyway. 
+   * Add all other participants in to your local directory (in the RTPMIDI interface), you'll need to know their IP address and they'll need to know yours - just look at [whatismyipaddress.com][3] in a browser and switch off VPNs first.
+   * Restrict the session to 'Only computers in my Directory' to ensure that only your friends can connect via the RTPMIDI port through your router to your machine. 
+   * One person creates a session and the other person tries to join it. 
+   * Make sure you can see the other person in your participants list
+   * On Mac at least, the session always seems to have the participant from the last session in there, so just clear it out and start fresh every time. Likely your IPs will have changed anyway so you'll need to update the directory users anyway. 
    
 
 1. Windows only - Both Ableton and Jamulus need to access your sound card and this can be a problem for certain drivers. So our advice is to open up Ableton first using an ASIO driver and then Jamulus using directX or whatever else. On Macs this is not a problem, not sure about Linux as we are not using that this time. 
@@ -58,23 +58,23 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
 
 1. Start Jamulus (client not server)
    {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/jamulus-config.jpg" alt="Configure Jamulus settings" caption="Configure Jamulus settings" %}
-   - Configure the input (where you audio goes IN to you soundcard)
-   - Configure the output (where the merged audio comes OUT of your soundcard and to your speakers)
-   - Make sure you don't use WIFI!
-   - Make sure each of you can hear the other first
-   - The mixer your see in your client adjusts the audio for you only, the other person has their own mixer
-   - Ensure that you are only listening to the output from Jamulus server, not your direct output
-   - We used high quality sound, stereo with auto jitter control
+   * Configure the input (where you audio goes IN to you soundcard)
+   * Configure the output (where the merged audio comes OUT of your soundcard and to your speakers)
+   * Make sure you don't use WIFI!
+   * Make sure each of you can hear the other first
+   * The mixer your see in your client adjusts the audio for you only, the other person has their own mixer
+   * Ensure that you are only listening to the output from Jamulus server, not your direct output
+   * We used high quality sound, stereo with auto jitter control
   
 
 1. Ableton Live
-   - Person who is 'master' switches on RTPMIDI output sync
+   * Person who is 'master' switches on RTPMIDI output sync
       {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-output.jpg" alt="Master sets output sync on" caption="Master sets output sync on" %} 
-   - Everyone else has only RTPMIDI input sync on 
+   * Everyone else has only RTPMIDI input sync on 
       {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-input.jpg" alt="Others set input sync on" caption="Others set input sync on" %}
-   - Non RTPMIDI midi prefs are unaffected and can be on if needed
-   - Make sure when the master starts Live, that the remote Live is triggered
-   - Play some 4x4 kicks on each end and adjust rtpmidi midi latency - works from both ends, but might be more sane if only one person is adjusting it
+   * Non RTPMIDI midi prefs are unaffected and can be on if needed
+   * Make sure when the master starts Live, that the remote Live is triggered
+   * Play some 4x4 kicks on each end and adjust rtpmidi midi latency - works from both ends, but might be more sane if only one person is adjusting it
 
 1. Jam it up, have fun. If you are running Jamulus Server then you can also enable auto-recording which is really cool. Jamulus will save each session with each participants audio in a separate WAV file for each of their connections. It will also create a '.lof' file for Audacity, and a '.rpp' for Reaper which means all the WAV files will be arranged in the respective audio programme just like the session took place. Check the image below to see what I mean - awesome stuff Jamulus - you rock! Please support these people as this tool is great :)
 {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/audacity.png" alt="Session recordings organised by particpant connection - labelled with IP" caption="Session recordings organised by particpant connection - labelled with IP" %}
