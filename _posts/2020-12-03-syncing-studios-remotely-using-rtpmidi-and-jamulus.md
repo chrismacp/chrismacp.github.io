@@ -23,9 +23,14 @@ It's not that hard, the results are pretty good considering there's going to be 
 <include diagram here>
 
 There are two bits of tech involved:
-1. RTPMIDI][2] - This is a protocol that allows you to create MIDI sessions that others can join remotely. Then you share the same MIDI network and can send MIDI messages to each other. It's actually been around for a while on MacOS, where it's build in, but is also now available for other operating systems too.
 
-2. [Jamulus][3] - This free software allows all participants in a session to send their own audio to a central server (you can host your own easily) where it is merged and sent back to everyone. The idea being that you only listen to the merged audio you receive back, thus everyone can hear each other. It actually works well too.
+1. RTPMIDI][2]
+   
+   This is a protocol that allows you to create MIDI sessions that others can join remotely. Then you share the same MIDI network and can send MIDI messages to each other. It's actually been around for a while on MacOS, where it's build in, but is also now available for other operating systems too.
+
+2. [Jamulus][3]
+   
+   This free software allows all participants in a session to send their own audio to a central server (you can host your own easily) where it is merged and sent back to everyone. The idea being that you only listen to the merged audio you receive back, thus everyone can hear each other. It actually works well too.
 
 In our sessions we both had Ableton Live open and one person was the 'master', in control of starting and stopping the session. When one person started Live it would trigger Live on the remote side. We both also have hardware and other MIDI instruments plugged in too which also get triggered. 
 
