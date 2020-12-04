@@ -20,7 +20,7 @@ It's been great catching up with friends and now a couple of us have stepped it 
 
 It's not that hard, the results are pretty good considering there's going to be changing latency over time between each person. Here's how it works...
 
-<include diagram here>
+
 
 There are two bits of tech involved:
 
