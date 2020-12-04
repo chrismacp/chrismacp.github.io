@@ -84,11 +84,12 @@ Both Ableton and Jamulus need to access your sound card and this can be a proble
 
 ### Step 7 - Ableton Live
 * Person who is 'master' switches on RTPMIDI output sync
-  {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-output.jpg" alt="Master sets output sync on" caption="Master sets output sync on" %}
+  
+{% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-output.jpg" alt="Master sets output sync on" caption="Master sets output sync on" %}
 
 * Everyone else has only RTPMIDI input sync on
 
-  {% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-input.jpg" alt="Others set input sync on" caption="Others set input sync on" %}
+{% include figure image_path="/assets/images/syncing-studios-remotely-using-rtpmidi-and-jamulus/live-midi-sync-input.jpg" alt="Others set input sync on" caption="Others set input sync on" %}
 
 * Non RTPMIDI midi prefs are unaffected and can be on if needed
 * Make sure when the master starts Live, that the remote Live is triggered
