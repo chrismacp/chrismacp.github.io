@@ -38,7 +38,8 @@ In Live you can use the 'MIDI Clock Sync Delay' which allows us to control the l
 
 ## How to do it
 
-** Important - you need ethernet connections to get this working well so don't expect much if you use WIFI. I forgot about this during one session and the audio was pretty bad so I can confirm it's not worth trying. **
+Important - you need ethernet connections to get this working well so don't expect much if you use WIFI. I forgot about this during one session and the audio was pretty bad so I can confirm it's not worth trying.
+{: .notice--warning}
 
 ### Step 1
 Download Jamulus and if you are not on a mac then get RTPMIDI too
