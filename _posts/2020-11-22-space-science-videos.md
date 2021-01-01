@@ -27,7 +27,10 @@ There are so many great space science videos out there so I'm starting a list to
 ## Planets / Moons
 [Wonders of the Solar System - BBC][3]<br />
 [Exploring the outer Solar System: now in vivid colour - SETI Talk - 2016][8]<br />
-[The Farthest (Voyager) - Amazon - 2016][13]<br />
+[The Farthest (Voyager) - Amazon Prime - 2017][13]<br />
+
+## Jupiter
+[The Jupiter Enigma - Amazon Prime - 2017][14]<br />
 
 ### Pluto
 [The Year of Pluto - New Horizons Documentary - NASA][2]<br />
@@ -67,3 +70,4 @@ There are so many great space science videos out there so I'm starting a list to
 [11]: https://www.youtube.com/watch?v=qj7HH0PCqIE
 [12]: https://www.amazon.co.uk/gp/video/detail/B07DD8WPBM
 [13]: https://www.amazon.co.uk/Farthest-Emer-Reynolds/dp/B07VTPMB55
+[14]:[https://www.amazon.co.uk/Farthest-Emer-Reynolds/dp/B07VTPMB55]
