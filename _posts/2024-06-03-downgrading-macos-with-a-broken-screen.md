@@ -44,21 +44,25 @@ Instead, you can create a bootable USB drive using the `createinstallmedia` tool
 ## Booting Macbook Pro to an external monitor
 
 As the title of this post indicates, I broke my laptop screen and so when booting the system I need it to appear on my external monitor. This was a tricky problem to solve.
-After hours of reading through forums and help guides online, I disvocered [this post][3] which tells us that we just need to:
+After hours of reading through forums and help guides online, I discovered [this post][3] which tells us that we just need to:
 
 "close the top of the computer as soon as you power on the laptop in order to cause the Apple drivers to default to the external monitor"
 
 This DOES WORK, so if you're having trouble then try those simple instructions. Just press the power button and then close the lid. After 5 seconds or so the external monitor will be activated.
 
+You can hold down the `alt`/`option` key on your USB keyboard after closing the lid to enter boot mode, there's no need to use the laptop's keyboard to do this.
 
 ## Installing MacOS
 
 Once you get the external monitor problem sussed, you can go ahead and install macos from your USB. This involves:
 
-1. Select the Disk Utility app within the installer
-2. Erasing the partition you plan to install macOS upon ([help instructions here][4])
-3. Quik Disk Utility
-4. Select the Install macOS option
+1. Press power button to switch laptop on
+2. Close lid (if you have a broken screen)
+3. Hold the `alt`/`option` button to get the boot menu,allowing you to select the USB installer 
+4. Select the Disk Utility app within the installer
+5. Erasing the partition you plan to install macOS upon ([help instructions here][4])
+6. Quik Disk Utility
+7. Select the Install macOS option
 
 In my case I just erased the Macintosh HD and Update partitions that I saw on my HD. After installing macOS I thought I was done, but I started seeing a growl message stating: 
 
