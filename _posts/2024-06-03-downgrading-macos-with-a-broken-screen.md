@@ -14,17 +14,21 @@ tags:
 
 ---
 
-Recently, my trusty Macbook Pro (2015) fell off a low bed and the screen broke. Not the first fall it's had over the last 9 and a bit years, but I was disamyed to see the end result this time around. 
+Recently, my trusty Macbook Pro (2015) fell off a low bed and the screen broke. Not the first fall it's had over the last 9 and a bit years, but I was dismayed to see the end result this time around. 
+
+{% include figure image_path="/assets/images/downgrading-macos-with-a-broken-screen/broken-screen.jpg" alt="Broken screen on my laptop" caption="Broken screen on my laptop" %}
 
 I use my laptop for all sorts of things, including music production, and decided to get a new one. The broken laptop would still work fine as a desktop machine though and I have some old hardware that I had to stop using due to support ending after High Sierra version of macOS. So, I decided to downgrade MacOS to High Sierra and keep the laptop as a music making machine, enabling me to get my old Saffire Pro 10 soundcard back in use.
 
 This blog post just outlines the steps I took, some of the problems I had, and the solutions I found. It's not an exact walkthrough though.
+
 
 ## Installation process
 
 Ideally I would just use my Time Machine backups to revert the OS back to High Sierra, that would have been the most straight forward option. Alas, my backups do not go that far back. 
 
 Having experience installing various flavours of Linux using bootable USBs, I discovered that this was an option here and decided to go with it. This means erasing my laptop drive and losing all my data, however I have everything backed up in Time Machine and on other backup drives. 
+
 
 ### Preparing the installer
 
@@ -67,8 +71,8 @@ The problem here seems to be that the way the disk is partitioned and the format
 
 I decided to just wipe the disk completely so I could create new partitions, hoping that the option to create the right parition system might show up. [This post][6] in the support forums helped me decide that this was an option I could try. 
 
-**!!! BE CAREFUL using dd, make sure you know which drive you are erasing !!!**.
-{: .notice--error} 
+**!!! BE CAREFUL using dd, make sure you know which drive you are erasing !!!**.{: .notice--danger} 
+
 
 First I used the `diskutil` command to identify the name of the disk I wanted to erase, for me it was `/dev/disk0`
 Then I unmounted and ran the dd command to wipe my driveas shown below. If you copy these commands then replace diskX with the name of your disk.
@@ -84,7 +88,8 @@ The `dd` process takes some time, roughly an hour for IIRC. My HD was 500GB so Y
 
 {% include figure image_path="/assets/images/downgrading-macos-with-a-broken-screen/format-drive.png" alt="Correct drive format options" caption="Correct drive format options" %}
 
-Using the correct 'Mac OS Extended' format and the GUID partition scheme, once I reinstalled macOS High Sierra again I was relieved to NOT see the warning about incompatible drive. 
+Using the correct 'Mac OS Extended' format and the GUID partition scheme, once I reinstalled macOS High Sierra again I was relieved to NOT see the warning about incompatible drive.
+
 
 ## Celebrate
 
