@@ -65,13 +65,15 @@ In my case I just erased the Macintosh HD and Update partitions that I saw on my
 {% include figure image_path="/assets/images/downgrading-macos-with-a-broken-screen/incompatible-drive.png" alt="Notification of problem with drive" caption="Notification of problem with drive" %}
 
 
+
 ## Solving the drive incompatibility problem
 
 The problem here seems to be that the way the disk is partitioned and the format used. After reading [a post][5], for High Sierra it looks like I need to create 'Mac OS Extended' partition rather than an 'APFS' but Disk Utility didn't give me that option?
 
 I decided to just wipe the disk completely so I could create new partitions, hoping that the option to create the right parition system might show up. [This post][6] in the support forums helped me decide that this was an option I could try. 
 
-**!!! BE CAREFUL using dd, make sure you know which drive you are erasing !!!**.{: .notice--danger} 
+**!!! BE CAREFUL using dd, make sure you know which drive you are erasing !!!**.
+{: .notice--danger} 
 
 
 First I used the `diskutil` command to identify the name of the disk I wanted to erase, for me it was `/dev/disk0`
@@ -86,9 +88,10 @@ sync
 
 The `dd` process takes some time, roughly an hour for IIRC. My HD was 500GB so YMMV. Once it completed, I exited the terminal and followed the previous steps to format my drive. This time around I saw the correct options available, as shown in the image below:
 
-{% include figure image_path="/assets/images/downgrading-macos-with-a-broken-screen/format-drive.png" alt="Correct drive format options" caption="Correct drive format options" %}
+{% include figure image_path="/assets/images/downgrading-macos-with-a-broken-screen/format-drive.jpg" alt="Correct drive format options" caption="Correct drive format options" %}
 
 Using the correct 'Mac OS Extended' format and the GUID partition scheme, once I reinstalled macOS High Sierra again I was relieved to NOT see the warning about incompatible drive.
+
 
 
 ## Celebrate
