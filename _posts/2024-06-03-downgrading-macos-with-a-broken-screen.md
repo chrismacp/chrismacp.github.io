@@ -95,7 +95,6 @@ Using the correct 'Mac OS Extended' format and the GUID partition scheme, once I
 
 
 ## Celebrate
-
 Party time, we made it. Probably not that many people need to do this procedure but it helped me out and who knows if I'll need to do something similar in the future. 
 
 
