@@ -23,14 +23,14 @@ I use my laptop for all sorts of things, including music production, and decided
 This blog post just outlines the steps I took, some of the problems I had, and the solutions I found. It's not an exact walkthrough though.
 
 
-## Installation process
+## Installation process
 
 Ideally I would just use my Time Machine backups to revert the OS back to High Sierra, that would have been the most straight forward option. Alas, my backups do not go that far back. 
 
 Having experience installing various flavours of Linux using bootable USBs, I discovered that this was an option here and decided to go with it. This means erasing my laptop drive and losing all my data, however I have everything backed up in Time Machine and on other backup drives. 
 
 
-### Preparing the installer
+### Preparing the installer
 
 You can [download old macOS versions here][1], going back to Lion 10.7 (at the time of writing). 
 
@@ -66,7 +66,7 @@ In my case I just erased the Macintosh HD and Update partitions that I saw on my
 
 
 
-## Solving the drive incompatibility problem
+## Solving the drive incompatibility problem
 
 The problem here seems to be that the way the disk is partitioned and the format used. After reading [a post][5], for High Sierra it looks like I need to create 'Mac OS Extended' partition rather than an 'APFS' but Disk Utility didn't give me that option?
 
@@ -94,7 +94,7 @@ Using the correct 'Mac OS Extended' format and the GUID partition scheme, once I
 
 
 
-## Celebrate
+## Celebrate
 
 Party time, we made it. Probably not that many people need to do this procedure but it helped me out and who knows if I'll need to do something similar in the future. 
 
